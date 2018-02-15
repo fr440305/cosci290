@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class D213 {
 	public static void main (String[] args) {
 		Scanner ipt = new Scanner(System.in);
-		System.out.print("Tell mw your name (no space containing): ");
+		System.out.print("Tell me your name (no space containing): ");
 
 		String name = ipt.next();
 		System.out.println("Which level of difficulty you want to play?");
