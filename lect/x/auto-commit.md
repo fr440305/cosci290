@@ -34,6 +34,7 @@ Here we make many assumptions of your configureations:
 - your git repo is embedded in ~/workspace
 - the reference of your remote repo in your local repo is called `origin`
 - the `$HOME` environment variable is setting corrent.
+
 and so on. If any of these assumption for you is false then this tutorial will not work for you.
 But you can surely ask the instructor for help.
 
