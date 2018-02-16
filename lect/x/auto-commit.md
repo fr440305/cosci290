@@ -1,4 +1,5 @@
 # Commit and update automatically
+
 This tutorial is about how to push your code to GitHub within one command.
 
 This tutorial is an extension of this course.  It will teach you some tricks about how to manage your git repo more effictive, such as writing bash script to push the codes to remote repo.
@@ -40,3 +41,9 @@ But you can surely ask the instructor for help.
 
 So far so good. Now you only need to type `cs290update`, then all the codes will be automatically
 commited and pushed.
+
+## Disadventagement
+
+- You cannot write costomize commit message to it since it is hard-coded inside the script.
+In fact it is not a problem because you can fix that by adding more codes into this script.
+- May fail by collision. 
