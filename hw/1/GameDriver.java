@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class GameDriver {
 	public static void main (String[] args) {
 		System.out.println(
-			""+
+			"\n\n"+
 			"  ____ ___  ________    _____ ______ |  |   ____  \n"+
 			"_/ __ \\\\  \\/  /\\__  \\  /     \\\\____ \\|  | _/ __ \\ \n"+
 			"\\  ___/ >    <  / __ \\|  Y Y  \\  |_> >  |_\\  ___/ \n"+
