@@ -14,7 +14,7 @@ public class Zombie {
   }
   
   public String getName () {
-    return this.name;
+    return (this.name == null)?"":this.name;
   }
   public void reduceHp (int d) {
     this.hp -= d;
