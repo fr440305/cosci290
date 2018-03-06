@@ -1,6 +1,6 @@
 public class Zombie {
-  public String name;
-  public int hp;
+  private String name;
+  private int hp;
   
   // anoymous zomb
   public Zombie () {
@@ -13,6 +13,12 @@ public class Zombie {
     this.hp = 100;
   }
   
+  public String getName () {
+    return this.name;
+  }
+  public void reduceHp (int d) {
+    this.hp -= d;
+  }
   public String toString() {
     return (
       ((this.name == null)?
