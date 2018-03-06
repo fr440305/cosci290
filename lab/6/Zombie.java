@@ -24,7 +24,7 @@ public class Zombie {
       ((this.name == null)?
             ("I am anoymous. "):
             ("My name is: " + this.name)) +
-      "My hp is: " + this.hp
+      " My hp is: " + this.hp
     );
   }
 }

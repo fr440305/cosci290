@@ -1,4 +1,10 @@
 #!/bin/sh
 
 javac ./*.java
-java Main
+# Test:
+java TestZombie
+java TestPlayer
+#java Main
+# clean:
+rm ./*.class
+rm ./*.swp

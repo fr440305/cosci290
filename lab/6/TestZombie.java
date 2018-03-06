@@ -14,5 +14,6 @@ public class TestZombie {
       z.reduceHp(10);
       System.out.println(z);
     }
+    System.out.println("passed.");
   }
 }

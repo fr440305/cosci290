@@ -7,5 +7,6 @@ public class TestPlayer {
 	  		p.hurtZombie(z_arr[i], 10);
 	  		System.out.println(z_arr[i]);
       }
+      System.out.println("passed.");
     }
 }
