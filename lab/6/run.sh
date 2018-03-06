@@ -2,7 +2,7 @@
 
 javac ./*.java
 # Test:
-java TestZombie
+java TestZombieBoss
 java TestPlayer
 #java Main
 # clean:
