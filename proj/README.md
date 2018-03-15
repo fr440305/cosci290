@@ -1,47 +1,47 @@
 # ZOMBIE SURVIVAL
 
-type:
-    Parser
-    Statment
-        help
-        self
-        ask <Npc>
-        ask <Partner> use <Skill>
-        todo
-        <skill> <Monster>
-        pick <Coin | Weapon>
-        update <Weapon>
-    Player
-    Weapon
-    Coin
-    Npc
-        Partner
-            Elf
-            ZombieMaid == ZombieLeader
-            Mage
-    Scene
-        Guild
-        Home*
-        Journey
-        LvTop
-        LvMid
-        LvFin
-    Monster
-        Zombie
-        ZombieLeader
-        CrystalBot
-        Mage
-        Boss
-    Skill
+## type:
+- Parser
+- Statment
+  - help
+  - self
+  - ask <Npc>
+  - ask <Partner> use <Skill>
+  - todo
+  - <skill> <Monster>
+  - pick <Coin | Weapon>
+  - update <Weapon>
+- Player
+- Weapon
+- Coin
+- Npc
+  - Partner
+    - Elf
+    - ZombieMaid == ZombieLeader
+    - Mage
+- Scene
+  - Guild
+  - LvTop
+  - LvMid
+  - LvFin
+- Monster
+  - Zombie
+  - ZombieLeader
+  - CrystalBot
+  - Mage
+  - Boss
+- Skill
 
-association:
-    Parser --generate-- Statment
-    Player --read-- Statment
-    Player --hit-- Monster
-    Player --pick-- Coin
-    Player --pick-- Weapon
+## Associations:
+
+- Parser --generate-- Statment
+- Player --read-- Statment
+- Player --hit-- Monster
+- Player --pick-- Coin
+- Player --pick-- Weapon
     
 uml:
+```
 
                                  1                follow                               *
                                  +-----------------------------------------------------+
@@ -84,3 +84,4 @@ uml:
                                      +----------^+Scene |
                                          in      +------+
 
+```
