@@ -136,3 +136,20 @@ the current design of your classes.
 Use Microsoft Word or a UML designer to produce
 the graphics. Please append the graphics to
 your documentation.txt file and push to GitHub.
+
+### 9
+
+Create a superclass that all of your objects in your
+text adventure will extend to and name it accordingly
+for your text adventure. The only attribute this class
+should have is private int id with matching mutators
+and accessors that your subclasses will inherit.
+
+In a test class, create an ArrayList of that object
+type and instantiate at least one object of every
+concrete class you have in your game.
+
+Add these subclasses to your ArrayList.
+Set some properties for each class.
+Then loop through the ArrayList and print out
+info on each object.

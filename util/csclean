@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -eu
+
+cs290_dir=$HOME/workspace
+
+for class_file in `find $cs290_dir | grep ".class$"`; do
+    echo rm $class_file
+    rm $class_file
+done;
+
+echo done.
