@@ -123,7 +123,7 @@ at the beginning of the class that you are the
 author and for which student/group the custom class
 is created for.
 
-### 8 (Done. See work/2/Documentation.txt)
+### 8 (Done. See work/2/Documentation.txt or proj/README)
 
 Relates to note/mar13.
 
@@ -137,7 +137,7 @@ Use Microsoft Word or a UML designer to produce
 the graphics. Please append the graphics to
 your documentation.txt file and push to GitHub.
 
-### 9
+### 9 (Done. See proj/{Obj*, Zombie*, Main})
 
 Create a superclass that all of your objects in your
 text adventure will extend to and name it accordingly

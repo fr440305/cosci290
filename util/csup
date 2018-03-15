@@ -6,6 +6,8 @@ cs290_dir=$HOME/workspace
 
 cd $cs290_dir
 
+csclean
+
 git --git-dir=$HOME/workspace/.git --work-tree=$HOME/workspace add --all
 git --git-dir=$HOME/workspace/.git --work-tree=$HOME/workspace commit -m "auto commit"
 git --git-dir=$HOME/workspace/.git --work-tree=$HOME/workspace push gh master
