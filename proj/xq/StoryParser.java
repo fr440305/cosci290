@@ -7,26 +7,42 @@ import java.io.FileNotFoundException;
 // Works for story mode.
 public class StoryParser {
 
-	public static boolean isNumber (String str) {
-		if (str.length() == 0) return false;
+	public static int toUint(String str) {
+		if (str.length() == 0)
+			return -1;
+		int ret = 0;
+		char ch;
 		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) < '0' || str.charAt(i) > '9') return false;
+			ch = str.charAt(i);
+			if (ch < '0' || ch > '9')
+				return -1;
+			else {
+				ret *= 10;
+				ret += (ch - '0');
+			}
 		}
-		return true;
+		return ret;
 	}
 
-	public static int readInputNum(int upr) {
+	public static int readInputUint() {
 		// 1..upr
 		while (true) {
 			System.out.print("  Please make your selection: ");
-			String inp = new Scanner(System.in).nextLine();
-			if (isNumber(inp) && Integer.parseInt(inp) >= 1 && Integer.parseInt(inp) <= upr) {
+			String inp = new Scanner(System.in).nextLine().trim();
+			int result;
+			if ((result = uint(inp)) != -1 && result >= 1 && result <= upr) {
 				System.out.println("");
-				return Integer.parseInt(inp);
+				return result;
 			} else {
 				System.out.println("  Invalid input!\n");
 			}
 		}
+	}
+
+	public static void error (String msg) {
+		System.out.println(msg);
+		System.out.println("Please press C-c to exit the program.");
+		new Scanner(System.in).nextLine();
 	}
 
 	public static String exec(String fname) {
@@ -36,28 +52,31 @@ public class StoryParser {
 		try {
 			Scanner fsc = new Scanner(new File("story/" + fname + ".txt"));
 			while (fsc.hasNextLine()) {
-				String l = fsc.nextLine();
+				String l = fsc.nextLine().trim();
 
-				if (l.length() == 0 || l.startsWith(" ")) { // jump
+				if (l.length() == 0) { // jump
 					System.out.println("  " + l);
-				} else if (l.startsWith("< ")) { // no-indent
-					for (int i = 2; i < l.length(); i++) {
-						System.out.print(l.charAt(i));
-					}
-					System.out.println("");
+				} else if (l.startsWith("<")) { // no-indent
+					System.out.println(l.substring(1).trim());
 				} else if (l.startsWith("#")) { // comment
 					continue;
+				} else if (l.startsWith("~")) {
+					System.out.println("  " + l.substring(1));
 				} else if (l.equals("@pause")) {
 					new Scanner(System.in).nextLine();
 				} else if (l.startsWith("@n ")) { // newline
-					int n = 0;
-					for (int i = 3; i < l.length(); i++) {
-						n *= 10;
-						n += (l.charAt(i) - '0');
+					int n = toUint(l.substring(2).trim());
+					if (n == -1) {
+						error(fname + "Syntax err : @n");
+						return
 					}
 					for (int i = 0; i < n; i++) {
 						System.out.println("");
 					}
+				} else if (l.equals("@re")) { // redo
+
+				} else if (l.startsWith("@run ") {
+					StoryParser.exec(l.substring(5).trim());
 				} else if (l.startsWith("@select ")) { // branch
 					String[] branches = l.split(" ");
 					StoryParser.exec(branches[readInputNum(branches.length-1)]);
