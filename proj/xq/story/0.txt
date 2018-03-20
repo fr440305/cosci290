@@ -1,0 +1,16 @@
+# This is a comment
+
+@n 100
+< hello, world
+
+I wake up,
+
+In a bright room.
+
+
+The room has a window, so the sunlight is there.
+
+Where it is?
+
+@re
+

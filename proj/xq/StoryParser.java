@@ -47,9 +47,11 @@ public class StoryParser {
 
 	// return @re or not.
 	public static boolean execLine (String fname, Scanner fsc) {
+                //System.out.println("StoryParser.execline");
 		while (fsc.hasNextLine()) {
 			String l = fsc.nextLine().trim();
-	
+                        //System.out.println(l);
+
 			if (l.length() == 0) { // jump
 				System.out.println("");
 			} else if (l.startsWith("<")) { // no-indent
@@ -88,16 +90,21 @@ public class StoryParser {
 	}
 
 	public static String exec(String fname) {
+                //System.out.println("Story.exec");
 		if (fname.equals("_")) {
 			return null;
 		}
 		try {
+                        boolean re;
 			do {
-				Scanner fsc = new Scanner(new File("story/" + fname + ".txt"));
-				boolean re = StoryParser.execLine(fname, fsc);
+                                //System.out.println("./story/" + fname + ".txt");
+				Scanner fsc = new Scanner(new File("./story/" + fname + ".txt"));
+				re = StoryParser.execLine(fname, fsc);
 				fsc.close();
 			} while (re);
-		} catch (FileNotFoundException e) {
+		//} catch (FileNotFoundException e) {
+		} catch (Exception e) {
+                        System.out.println("err!");
 			e.printStackTrace();
 		}
 		return null;
