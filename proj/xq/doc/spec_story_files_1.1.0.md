@@ -106,7 +106,7 @@ PauseLine = NonWhiteRune { NonWhiteRune }
 定义：FallThroughLine。
 
 <pre>
-FallThroughLine = "" | ( "~" String )
+FallThroughLine = "" | ( "." String )
 </pre>
 
 定义：OutdentLine。
