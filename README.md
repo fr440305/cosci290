@@ -61,6 +61,7 @@ Documentation and push it to your github.
 - 7
 - 8
 - 9
+- 10 3-20
 
 ### 1 (Done)
 
@@ -154,3 +155,30 @@ Add these subclasses to your ArrayList.
 Set some properties for each class.
 Then loop through the ArrayList and print out
 info on each object.
+
+### 10 (Done. See proj/\* for 1 and labo/10/\* for 2 and 3.)
+
+1. In your text adventure,
+replace all arrays with ArrayLists.
+
+2. Also, do problem in the book
+to review programming concepts: 
+
+7.8 (Average an array) Write
+two overloaded methods that return
+the average of an array with
+the following headers:
+
+```
+public static int average(int[] array)
+public static double average(double[] array)
+```
+ 
+Write a test program that prompts the user
+to enter ten double values,
+invokes this method, and displays the average value.
+
+3. Watch demo on getting arguments from the command line.
+Alter the above problem to take in arguments from
+the command line instead and use ArrayLists
+instead of arrays.
