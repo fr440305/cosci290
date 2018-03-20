@@ -79,8 +79,6 @@ public class StoryParser {
 				StoryParser.exec(l.substring(4).trim());
 			} else if (l.equals("@re")) {
 				return true;
-			} else if (l.startsWith("@if ")) {
-				// super difficult
 			} else {
 				System.out.print("  " + l);
 				new Scanner(System.in).nextLine();

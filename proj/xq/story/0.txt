@@ -10,7 +10,10 @@ In a bright room.
 
 The room has a window, so the sunlight is there.
 
-Where it is?
+. You have three choices
+. 1  Go outside
+. 2  Stay Inside and check this room
+. 3  Stay inside and sleep again
 
-@re
+Please input your choice (1 or 2 or 3):
 
