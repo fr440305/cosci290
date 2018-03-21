@@ -18,33 +18,59 @@
 
 “出去写完再进来！”他颁了指令。
 
-# Lines with more than or equal to one space indentation will be output and jumped:
+# Lines starts with a dot will be output and jumped:
 . 我选择：
  
 . 1  听从老师陛下的圣旨
 . 2  拔出口袋里的自动铅笔，刺杀老师陛下
 . 3  背上书包，逃离学校
 
-Please choose 1 or 2 or 3 :
-
+. Please choose 1 or 2 or 3 :
+#
 # "@if" is a keyword.
 # if you choose 1, the story will goto story/1_kill.txt
 # if you choose 2, the story will goto story/2_save.txt
 # if you choose 3, the story will continue.
+#
+@if Input 1 {
+  我听从了老师陛下的话。
 
-@re
+  但是我发现，我连作文本都没带。
 
-# @if Input 1: {
-#   @use 1_listen
-# } 2: {
-#   @use 1_kill
-# } 3: {
-#   # continue:
-#   @use _
-# } {
-#   @use invalid_input
-#   @re
-# }
+  我向老师陛下报告了这件事。
+
+  “滚吧。滚回家去。”
+
+  他十分生气，我十分害怕。
+} 2 {
+  我感到十分屈辱。
+
+  我也感到十分愤怒。
+
+  我从口袋里掏出了一支铅笔，那支铅笔被我削得很尖。
+
+  我用那支笔，刺向了陛下。
+
+  同学们尖叫起来，但是他们的声音，离我好远。
+
+  陛下，不，老师？
+
+  你死了吗？
+
+  被我杀死了吗？
+
+  我会怎么样呢？
+
+  会进少管所吧。出来以后，就是光头的大叔了。话说回来，像我这样的正太，似乎在少管所里，是很受欢迎的呢。
+  
+  好害怕。
+} 3 {
+  # continue:
+  @run _
+} {
+  Invalid input!
+  @re
+}
 
 我逃离了学校。
 
