@@ -11,6 +11,7 @@
 
 - 1
 - 2
+- 3
 
 ### 1 (Done)
 
@@ -49,6 +50,22 @@ Food, etc.
 
 Turn this in as a text file called
 Documentation and push it to your github.
+
+### 3
+
+Get to at least 25 points in Codewars.
+
+In your documentation.txt file:
+
+write a short summary of what your game is about.
+Title this section "Summary".
+In the section where you listed out objects
+for your text adventure for HW2, title this
+section "Objects Used".
+
+No other homework until I give feedback for
+your text adventure,
+in which you will refactor your code.
 
 ## Lab (labo)
 
@@ -182,3 +199,36 @@ invokes this method, and displays the average value.
 Alter the above problem to take in arguments from
 the command line instead and use ArrayLists
 instead of arrays.
+
+### 11
+
+You are responsible for knowing the topics listed for
+GROUP 1, 2, and 3 above including the following topics:
+
+Creating a custom class/object based on given
+specifications/instructions
+All custom classes/objects must have at least the following:
+
+- class attributes that are private
+- a zero-argument constructor that gives default values to class attributes
+- getters and setters for each class attribute
+- a toString method that displays each attributes
+
+Lab:
+
+Create a custom class called Person with the following attributes
+
+- First Name
+- Last Name
+- Age
+- Gender
+
+Create a subclass of Person called Student with the following attributes
+
+- Major
+- GPA
+- List of names of classes
+
+Create a test program/class that has a list of 5 Student
+objects and prints out each student information
+including their name, age, and gender.
