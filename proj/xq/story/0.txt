@@ -1,3 +1,4 @@
+
 # This is a comment
 
 @n 100
@@ -19,23 +20,16 @@
   . Please input your choice (11 or 12):
   @if Input 11 {
     . Your input is 11
-
   } 12 {
     . Your input is 12
-
   } {
     Invalid input!
     @re
   }
-
 } 2 {
-
   .Your input is 2
-
 } 3 {
-
   .Your input is 3
-
 } {
   Invalid Input!
   @re
