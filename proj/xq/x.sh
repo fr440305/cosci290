@@ -6,7 +6,7 @@ set -eu
 javac ./*.java
 
 # run:--
-java Main || true
+java Main $@ || true
 
 # clean:--
 rm ./*.class
