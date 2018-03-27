@@ -4,66 +4,64 @@ import java.util.ArrayList;
 public class Student extends Person {
   private String major;
   private double gpa;
-  private ArrayList<String> classes;
+  private ArrayList<Course> courses;
   
   public Student() {
     super();
     this.major = "";
     this.gpa = 0;
-    this.classes = new ArrayList<String>();
+    this.courses = new ArrayList<Course>();
   }
   
   public String getMajor() {
     return this.major;
   }
   
-  public boolean setMajor(String m) {
+  public void setMajor(String m) {
     this.major = m;
-    return true; // may changes in future.
   }
   
   public double getGPA () {
     return this.gpa;
   }
   
-  public boolean setGPA (int g) {
-    if (g >= 0) {
-      this.gpa = g;
-      return true;
-    } else {
-      return false;
-    }
+  public void setGPA (double g) {
+    this.gpa = g;
   }
   
-  public boolean addClass (String c) {
-    this.classes.add(c);
-    return true;
+  public Student addCourse (Course c) {
+    this.courses.add(c);
+    return this;
   }
   
-  public boolean delClass (String c) {
+  // this method delete a course which is
+  // identical to the parameter from the list.
+  // If there is no identical course in the list,
+  // this method returns false
+  // without any modification to the student object.
+  public boolean delCourse (Course c) {
     int i;
-    if ((i = this.findClass(c)) != -1) {
-      this.classes.remove(i);
+    if ((i = this.findCourse(c)) != -1) {
+      this.courses.remove(i);
       return true;
     } else {
       return false;
     }
   }
   
-  public int findClass (String c) {
-    for (int i = 0; i < this.classes.size(); i++) {
-      if (this.classes.get(i).equals(c)) {
+  public int findCourse (Course c) {
+    for (int i = 0; i < this.courses.size(); i++) {
+      if (this.courses.get(i).equals(c)) {
         return i;
       }
     }
     return -1;
   }
   
-  // @override toString
   public String toString() {
     String classes_string = "";
-    for (int i = 0; i < this.classes.size(); i++) {
-      classes_string += (this.classes.get(i) + ", ");
+    for (int i = 0; i < this.courses.size(); i++) {
+      classes_string += ("\n\t\t" + this.courses.get(i).toString());
     }
     return "Student {\n"+
       "\tfirst : "+this.getFirstName()+"\n"+
@@ -73,7 +71,6 @@ public class Student extends Person {
       "\tmajor : "+this.getMajor()+"\n"+
       "\tGPA : "+this.getGPA()+"\n"+
       "\tclasses : "+classes_string+"\n"+
-      "}"
-      ;
+      "}";
   }
 }
