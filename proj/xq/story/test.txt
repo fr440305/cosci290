@@ -1,0 +1,38 @@
+
+# This is a comment
+
+@n 100
+< hello, world
+
+. You have three choices
+. 1  Input "1"
+. 2  Input "2"
+. 3  Input "3"
+
+. Please input your choice below (1 or 2 or 3):
+@if Input 1 {
+  . Your input is 1
+  
+  . You have two choices
+  . 1  Input 11
+  . 2  Input 12
+
+  . Please input your choice below (11 or 12):
+  @if Input 11 {
+    . Your input is 11
+  } 12 {
+    . Your input is 12
+  } {
+    Invalid input!
+    @re
+  }
+} 2 {
+  .Your input is 2
+} 3 {
+  .Your input is 3
+} 4 {
+  . Hey, you should not input 4 bacause it is not a visible choice!
+} {
+  Invalid Input!
+  @re
+}

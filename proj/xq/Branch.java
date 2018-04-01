@@ -1,4 +1,5 @@
 public class Branch {
+
 	public static boolean[] ctxs = new boolean[16];
 	public static int[] vals = new int[16];
 	public static int[] states = new int[16];
@@ -12,9 +13,9 @@ public class Branch {
 	// @if .. OPTION {
 	// ..or..
 	// } OPTION {
-	public static int parseOption (String l) {
+	public static Integer parseLabel (String l) {
 		String[] tokens = l.split(" ");
-		if (tokens.length <= 2) return -1; // else branch.
+		if (tokens.length <= 2) return null; // else branch.
 		return Integer.parseInt(tokens[tokens.length-2]);
 	}
 
@@ -32,11 +33,11 @@ public class Branch {
 	}
 
 	// new label
-	public static void newLb (int opt) {
+	public static void newLb (Integer opt) {
 		//System.out.println("Branch.newLb vals["+peek+"] opt == " +vals[peek]+" "+opt);
 		if (ctxs[peek] && states[peek] != 2) {
 			if (states[peek] == 0) {
-				if (opt == -1 || opt == vals[peek]) {
+				if (opt == null || opt.intValue() == vals[peek]) {
 					// match
 					states[peek] = 1;
 				}
@@ -53,9 +54,9 @@ public class Branch {
 	public static void endIf () {
 		peek -= 1;
 		//System.out.println("Branch.endIf States ");
-		for (int i = 0; i <= peek; i++) {
+		//for (int i = 0; i <= peek; i++) {
 			//System.out.println("   states["+i+"] == " + states[i]);
-		}
+		//}
 	}
 
 }

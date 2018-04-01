@@ -1,10 +1,7 @@
-//_//
+// 882984689
 
-import java.util.Stack;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
-//import java.io.FileNotFoundException;
 
 // Works for story mode.
 public class Story {
@@ -18,6 +15,11 @@ public class Story {
 		return -1;
 	}
 
+	public static int setValue (String key, int val) {
+		System.out.println("setValue :: key val == " + key + " " + val);
+		return -1;
+	}
+
 	// return @re or not.
 	public static boolean eachLine (String fname, Scanner fsc) {
 		while (fsc.hasNextLine()) {
@@ -26,13 +28,13 @@ public class Story {
 			if (l.startsWith("@if ")) { // start if
 				if (Branch.isActive()) {
 					Branch.newIf(getValue(Branch.parseKey(l)));
-					Branch.newLb(Branch.parseOption(l));
+					Branch.newLb(Branch.parseLabel(l));
 				} else {
 					Branch.newIf(-1);
 				}
 				continue;
 			} else if (l.startsWith("}") && l.endsWith("{")) { // labels
-				Branch.newLb(Branch.parseOption(l));
+				Branch.newLb(Branch.parseLabel(l));
 				continue;
 			} else if (l.equals("}")) { // endif
 				Branch.endIf();
@@ -55,13 +57,18 @@ public class Story {
 						System.out.println("");
 					}
 				} else if (l.startsWith("@run ")) {
-					String sub_fname = l.substring(4).trim();
+					String sub_fname = l.substring(("@run ").length()).trim();
 					if (sub_fname.equals("$")) {
+						// return
 						return false;
 					}
 					Story.exec(l.substring(4).trim());
 				} else if (l.equals("@re")) {
 					return true;
+				} else if (l.startsWith("@set ")) {
+					setValue(l.split(" ")[0], Integer.parseInt(l.split(" ")[1]));
+				} else if (l.startsWith("@battle ")) {
+					Battle.exec(l.substring(("@battle ").length()).trim());
 				} else {
 					System.out.print("  " + l);
 					new Scanner(System.in).nextLine();
@@ -82,7 +89,6 @@ public class Story {
 				re = Story.eachLine(fname, fsc);
 				fsc.close();
 			} while (re);
-		//} catch (FileNotFoundException e) {
 		} catch (Exception e) {
 			System.out.println("err!");
 			e.printStackTrace();

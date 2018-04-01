@@ -1,38 +1,68 @@
+@n 10
 
-# This is a comment
+.          @@================@@
+.          @@  骑士与吸血鬼  @@
+.          @@================@@
 
-@n 100
-< hello, world
+# lines starts with "< " will be output without indentaion
+< Chap 0 - Rain Never Stops
 
-. You have three choices
-. 1  Input "1"
-. 2  Input "2"
-. 3  Input "3"
+从昨天起，雨就一直在下。
+但这并不意味着，昨天之前没有下雨。
+只是因为昨天之前，我不在这里罢了。
 
-. Please input your choice below (1 or 2 or 3):
-@if Input 1 {
-  . Your input is 1
-  
-  . You have two choices
-  . 1  Input 11
-  . 2  Input 12
+雨的声音，在刚开始的时候，让我觉得很烦躁。
+但是听久之后，就不觉得烦躁了。
+反而觉得很安心，甚至还有点想要睡觉。
 
-  . Please input your choice below (11 or 12):
-  @if Input 11 {
-    . Your input is 11
-  } 12 {
-    . Your input is 12
-  } {
-    Invalid input!
-    @re
-  }
-} 2 {
-  .Your input is 2
-} 3 {
-  .Your input is 3
-} 4 {
-  . Hey, you should not input 4 bacause it is not a visible choice!
-} {
-  Invalid Input!
-  @re
-}
+我已经很久，没有睡过好觉了。
+这都是因为，我脚腕上的镣铐的缘故。
+而且流放的中途，我也没怎么好好吃饭。
+
+那些婊子养的差老，只会给我吃那些，连猪吃了都要拉肚子的东西——
+
+只因为，我是被流放的人。
+
+
+
+从昨天五点开始，我就离开了衙门，开始向最终的目的地前进。
+但是，我已经走了整整一天半。
+带的干粮在前几个时辰也吃完了。
+
+身上带的盘缠，理应够我买东西吃。
+但是这一天半之间，我一个人也没遇到。
+
+这里人迹罕至，想来也是有两个原因。
+一是地理位置，这里是边境。
+二是气候，这里总是下雨。
+
+我现在很想睡觉，但是我知道，我不能。
+
+因为人少也就意味着——
+
+怪物横行。
+
+我甚至已经感觉到了，躲藏在我身前的大树背后的，哥布林的气息。
+
+不，不只。
+
+该死，我竟然——被包围了！
+
+@run 0_fight_or_escape
+
+@battle 1_goblin
+
+总算干掉了。
+狼狈了点，没办法。
+
+但即使戴着脚镣，也能干掉哥布林，这已经算是不错了吧？
+
+而且现在，我还捡到了哥布林的武器。
+
+木棍上嵌满了由骨头制成的尖刺，这一看就很有杀伤力。
+
+嗯，看来，这一路上遇到的，也不全是坏事。
+
+抱着乐观的想法，我继续向前进发。我从背包里掏出指南针和。
+
+@run 1
