@@ -1,3 +1,4 @@
+// Weishu Tan, 882984689 at East Los Angeles College
 
 import java.util.ArrayList;
 
@@ -49,6 +50,9 @@ public class Student extends Person {
     }
   }
   
+  // this method returns the index of the course
+  // identical to the parameter from the course list.
+  // If there is no identical course, this method returns -1.
   public int findCourse (Course c) {
     for (int i = 0; i < this.courses.size(); i++) {
       if (this.courses.get(i).equals(c)) {

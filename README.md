@@ -6,6 +6,9 @@
 - proj
 - work
 - util
+## Midterm (Done. See labo/11)
+
+
 
 ## Homework (work)
 
