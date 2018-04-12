@@ -6,6 +6,7 @@
 - proj
 - work
 - util
+
 ## Midterm (Done. See labo/11)
 
 
@@ -82,6 +83,8 @@ in which you will refactor your code.
 - 8
 - 9
 - 10 3-20
+- 11
+- 12
 
 ### 1 (Done)
 
