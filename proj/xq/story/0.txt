@@ -2,37 +2,119 @@
 # This is a comment
 
 @n 100
-< hello, world
+. __________            ___.   .__           _________                  .__              .__   
+. \____    /____   _____\_ |__ |__| ____    /   _____/__ ____________  _|__|__  _______  |  |  
+.   /     //  _ \ /     \| __ \|  |/ __ \   \_____  \|  |  \_  __ \  \/ /  \  \/ /\__  \ |  |  
+.  /     /(  <_> )  Y Y  \ \_\ \  \  ___/   /        \  |  /|  | \/\   /|  |\   /  / __ \|  |__
+. /_______ \____/|__|_|  /___  /__|\___  > /_______  /____/ |__|    \_/ |__| \_/  (____  /____/
+.         \/           \/    \/        \/          \/                                  \/      
 
-. You have three choices
-. 1  Input "1"
-. 2  Input "2"
-. 3  Input "3"
+< Chap 1 - Somewhere, Somewhere else, and Something
 
-. Please input your choice below (1 or 2 or 3):
+I am going to have my adventure, from "somewhere" to "somewhere else".
+
+.The reason why I say "somewhere" and "nowhere" instead of the concrete location,
+is because I do not know where I came from and where I should go.
+
+And the reason why I do not know that is because --
+
+I lose the most part of my memory.
+
+.The only thing I remember,
+.is that I have "something" to do,
+but I also do not know what that is.
+
+.Although I do not remember what I should do, 
+I have to thanks for that I still remember I have something should do.
+
+.Because if I do not remember it,
+.I will lose all my willing for living, and I will definitely died
+at this horrible habitat of --
+
+ZOMBIES!!
+
+They appears! Five zombies are going right there!
+
+I have to fight, because I have SOMETHING to do!
+
+.System.Hint :: Input 1 to kill a zombie.
+
 @if Input 1 {
-  . Your input is 1
-  
-  . You have two choices
-  . 1  Input 11
-  . 2  Input 12
-
-  . Please input your choice below (11 or 12):
-  @if Input 11 {
-    . Your input is 11
-  } 12 {
-    . Your input is 12
-  } {
-    Invalid input!
-    @re
-  }
-} 2 {
-  .Your input is 2
-} 3 {
-  .Your input is 3
-} 4 {
-  . Hey, you should not input 4 bacause it is not a visible choice!
+  Good! I killed one of them!
 } {
-  Invalid Input!
-  @re
+  I did not input 1. Therefore zombies killed me.
+  .  ________                        ________                     
+  . /  _____/_____    _____   ____   \_____  \___  __ ___________ 
+  ./   \  ___\__  \  /     \_/ __ \   /   |   \  \/ // __ \_  __ \
+  .\    \_\  \/ __ \|  Y Y  \  ___/  /    |    \   /\  ___/|  | \/
+  . \______  (____  /__|_|  /\___  > \_______  /\_/  \___  >__|   
+  .        \/     \/      \/     \/          \/          \/   
+  @run $
 }
+
+.System.Hint :: Input 1 to kill a zombie.
+
+@if Input 1 {
+  Good! I killed two of them!
+} {
+  I did not input 1. Therefore zombies killed me.
+  .  ________                        ________                     
+  . /  _____/_____    _____   ____   \_____  \___  __ ___________ 
+  ./   \  ___\__  \  /     \_/ __ \   /   |   \  \/ // __ \_  __ \
+  .\    \_\  \/ __ \|  Y Y  \  ___/  /    |    \   /\  ___/|  | \/
+  . \______  (____  /__|_|  /\___  > \_______  /\_/  \___  >__|   
+  .        \/     \/      \/     \/          \/          \/   
+  @run $
+}
+
+.System.Hint :: Input 1 to kill a zombie.
+
+@if Input 1 {
+  Good! I killed three of them!
+} {
+  I did not input 1. Therefore zombies killed me.
+  .  ________                        ________                     
+  . /  _____/_____    _____   ____   \_____  \___  __ ___________ 
+  ./   \  ___\__  \  /     \_/ __ \   /   |   \  \/ // __ \_  __ \
+  .\    \_\  \/ __ \|  Y Y  \  ___/  /    |    \   /\  ___/|  | \/
+  . \______  (____  /__|_|  /\___  > \_______  /\_/  \___  >__|   
+  .        \/     \/      \/     \/          \/          \/   
+  @run $
+}
+
+.System.Hint :: Input 1 to kill a zombie.
+
+@if Input 1 {
+  Good! I killed four of them!
+} {
+  I did not input 1. Therefore zombies killed me.
+  .  ________                        ________                     
+  . /  _____/_____    _____   ____   \_____  \___  __ ___________ 
+  ./   \  ___\__  \  /     \_/ __ \   /   |   \  \/ // __ \_  __ \
+  .\    \_\  \/ __ \|  Y Y  \  ___/  /    |    \   /\  ___/|  | \/
+  . \______  (____  /__|_|  /\___  > \_______  /\_/  \___  >__|   
+  .        \/     \/      \/     \/          \/          \/   
+  @run $
+}
+
+.System.Hint :: Input 1 to kill a zombie.
+
+@if Input 1 {
+  Good! I killed all of them!
+} {
+  I did not input 1. Therefore zombies killed me.
+  .  ________                        ________                     
+  . /  _____/_____    _____   ____   \_____  \___  __ ___________ 
+  ./   \  ___\__  \  /     \_/ __ \   /   |   \  \/ // __ \_  __ \
+  .\    \_\  \/ __ \|  Y Y  \  ___/  /    |    \   /\  ___/|  | \/
+  . \______  (____  /__|_|  /\___  > \_______  /\_/  \___  >__|   
+  .        \/     \/      \/     \/          \/          \/   
+  @run $
+}
+
+Not bad.
+
+
+
+
+

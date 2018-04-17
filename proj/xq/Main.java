@@ -6,7 +6,7 @@ public class Main {
 		if (x.length == 1) {
 			Story.exec(x[0]);
 		} else {
-			Story.exec("1");
+			Story.exec("0");
 		}
 	}
 }
