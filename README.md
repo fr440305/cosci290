@@ -85,6 +85,7 @@ in which you will refactor your code.
 - 10 3-20
 - 11
 - 12
+- 13 4-17
 
 ### 1 (Done)
 
@@ -238,3 +239,8 @@ Create a subclass of Person called Student with the following attributes
 Create a test program/class that has a list of 5 Student
 objects and prints out each student information
 including their name, age, and gender.
+
+## 12
+
+## 13 (Done. See /proj/xq)
+
