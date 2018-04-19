@@ -27,7 +27,7 @@
 - 2
 - 1
 
-### 14
+### 14 (Done but not good. See proj/xq/Store.java)
 
 Using the same techniques on Tuesday's lab,
 compile and run "TestWriteFile.java",
