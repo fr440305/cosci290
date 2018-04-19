@@ -73,139 +73,46 @@ in which you will refactor your code.
 
 ## Lab (labo)
 
-- 1
-- 2
-- 3
-- 4
-- 5
-- 6
-- 7
-- 8
-- 9
-- 10 3-20
-- 11
-- 12
+- 14 4-19
 - 13 4-17
+- 12 Midterm
+- 11
+- 10 3-20
+- 9
+- 8
+- 7
+- 6
+- 5
+- 4
+- 3
+- 2
+- 1
 
-### 1 (Done)
+### 14
 
-Print a cool-style text.
+Using the same techniques on Tuesday's lab,
+compile and run "TestWriteFile.java",
+which can be found here:
+https://github.com/agenttuy/cosci290/blob/master/lab/TestWriteFile.java
+(Links to an external site.)Links to an external site.
 
-### 2
+Copy the code into your Utility class.
+Be sure to modify the code so that it is a reusable custom method.
+Use this method in your `GameDriver.java` to write/save info asked by the user.
+Think of information that you might want to save for the user of your text adventure.
 
-Use Scanner to do something.
+### 13 (Done before the class begin. See /proj/xq)
 
-### 3
+Based on the today's demo your lab requirements are:
 
-Use if statment to do something.
+- Create a Utility class that has all your custom methods that are not related to an object.
+- In this Utility class, have a custom method that can read a text file. This text file will hold all of your story lines.
+- Refactor your GameDriver.java so that there are no longer any string literals.
+- Create a custom SplashScreen class that houses all your different ASCII art or splash screens.
 
-### 4
+Plus 2 points if done by the end of class, otherwise, due by tonight at 11:59PM.
 
-Do the questions in the codingbat.com.
-
-### 5
-
-Set the text adventure into an eclipse project.
-
-Install git plugin into eclipse.
-
-Begin to write some self-defined classes.
-
-### 6
-
-Test your custom class developed in
-last week's lab. Test this class in
-another class with main method.
-Name this test class accordingly.
-For example, if your custom class/object
-was Zombie, then call this class TestZombie.
-
-Think of another class/object for your
-text adventure that may require the use
-of inheritance. For example, your text
-adventure could have different kinds of
-zombies. Think of the Zombie class as a
-general Zombie class that maybe ZombieCat
-might extend from. ZombieCat would be a
-subclass to Zombie class and inherit all
-of its properties and methods.
-Write a custom subclass that follows
-this concept.
-
-Please also write a test class for
-this subclass.
-
-Look at Student.java and TestStudent.java in:
-https://github.com/agenttuy/cosci290/tree/master/group4
-
-### 7 (Done. See custom/*)
-
-Create custom classes for members in group 3.
-Create a folder called "custom" and put custom
-classes created for other students in this folder.
-
-For each custom class, include in a block comment
-at the beginning of the class that you are the
-author and for which student/group the custom class
-is created for.
-
-### 8 (Done. See work/2/Documentation.txt or proj/README)
-
-Relates to note/mar13.
-
-Using UML graphical notation,
-draw a chart that organizes your current
-objects in your text adventure. Please
-include potential objects when considering
-the current design of your classes. 
-
-Use Microsoft Word or a UML designer to produce
-the graphics. Please append the graphics to
-your documentation.txt file and push to GitHub.
-
-### 9 (Done. See proj/{Obj*, Zombie*, Main})
-
-Create a superclass that all of your objects in your
-text adventure will extend to and name it accordingly
-for your text adventure. The only attribute this class
-should have is private int id with matching mutators
-and accessors that your subclasses will inherit.
-
-In a test class, create an ArrayList of that object
-type and instantiate at least one object of every
-concrete class you have in your game.
-
-Add these subclasses to your ArrayList.
-Set some properties for each class.
-Then loop through the ArrayList and print out
-info on each object.
-
-### 10 (Done. See proj/\* for 1 and labo/10/\* for 2 and 3.)
-
-1. In your text adventure,
-replace all arrays with ArrayLists.
-
-2. Also, do problem in the book
-to review programming concepts: 
-
-7.8 (Average an array) Write
-two overloaded methods that return
-the average of an array with
-the following headers:
-
-```
-public static int average(int[] array)
-public static double average(double[] array)
-```
- 
-Write a test program that prompts the user
-to enter ten double values,
-invokes this method, and displays the average value.
-
-3. Watch demo on getting arguments from the command line.
-Alter the above problem to take in arguments from
-the command line instead and use ArrayLists
-instead of arrays.
+### 12 (Midterm)
 
 ### 11
 
@@ -240,7 +147,121 @@ Create a test program/class that has a list of 5 Student
 objects and prints out each student information
 including their name, age, and gender.
 
-## 12
+### 10 (Done. See proj/\* for 1 and labo/10/\* for 2 and 3.)
 
-## 13 (Done. See /proj/xq)
+1. In your text adventure,
+replace all arrays with ArrayLists.
 
+2. Also, do problem in the book
+to review programming concepts: 
+
+7.8 (Average an array) Write
+two overloaded methods that return
+the average of an array with
+the following headers:
+
+```
+public static int average(int[] array)
+public static double average(double[] array)
+```
+ 
+Write a test program that prompts the user
+to enter ten double values,
+invokes this method, and displays the average value.
+
+3. Watch demo on getting arguments from the command line.
+Alter the above problem to take in arguments from
+the command line instead and use ArrayLists
+instead of arrays.
+
+### 9 (Done. See proj/{Obj*, Zombie*, Main})
+
+Create a superclass that all of your objects in your
+text adventure will extend to and name it accordingly
+for your text adventure. The only attribute this class
+should have is private int id with matching mutators
+and accessors that your subclasses will inherit.
+
+In a test class, create an ArrayList of that object
+type and instantiate at least one object of every
+concrete class you have in your game.
+
+Add these subclasses to your ArrayList.
+Set some properties for each class.
+Then loop through the ArrayList and print out
+info on each object.
+
+### 8 (Done. See work/2/Documentation.txt or proj/README)
+
+Relates to note/mar13.
+
+Using UML graphical notation,
+draw a chart that organizes your current
+objects in your text adventure. Please
+include potential objects when considering
+the current design of your classes. 
+
+Use Microsoft Word or a UML designer to produce
+the graphics. Please append the graphics to
+your documentation.txt file and push to GitHub.
+
+### 7 (Done. See custom/*)
+
+Create custom classes for members in group 3.
+Create a folder called "custom" and put custom
+classes created for other students in this folder.
+
+For each custom class, include in a block comment
+at the beginning of the class that you are the
+author and for which student/group the custom class
+is created for.
+
+### 6
+
+Test your custom class developed in
+last week's lab. Test this class in
+another class with main method.
+Name this test class accordingly.
+For example, if your custom class/object
+was Zombie, then call this class TestZombie.
+
+Think of another class/object for your
+text adventure that may require the use
+of inheritance. For example, your text
+adventure could have different kinds of
+zombies. Think of the Zombie class as a
+general Zombie class that maybe ZombieCat
+might extend from. ZombieCat would be a
+subclass to Zombie class and inherit all
+of its properties and methods.
+Write a custom subclass that follows
+this concept.
+
+Please also write a test class for
+this subclass.
+
+Look at Student.java and TestStudent.java in:
+
+### 5
+
+Set the text adventure into an eclipse project.
+
+Install git plugin into eclipse.
+
+Begin to write some self-defined classes.
+
+### 4
+
+Do the questions in the codingbat.com.
+
+### 3
+
+Use if statment to do something.
+
+### 2
+
+Use Scanner to do something.
+
+### 1 (Done)
+
+Print a cool-style text.
