@@ -1,82 +1,22 @@
 # Cosci290 Group 4
 
-- custom
 - labo
+- work
+
+- custom
 - note
 - proj
-- work
 - util
 
 ## Midterm (Done. See labo/11)
 
 
-
-## Homework (work)
-
-- 1
-- 2
-- 3 3-22 23:59
-
-### 1 (Done)
-
-See https://github.com/agenttuy/cosci290/blob/master/HW/HW1Demo.java
-
-Create a class called "GameDriver" and
-save/name the file "GameDriver.java".
-
-The program shold start up with your
-text aventure splash screen (it would 
-be a good idea to use the one from Lab 1).
-
-Next, the program should have a print out
-of some storytelling that starts
-the text adventure.
-
-Then set up the game with questions
-asked from the user to start the text
-adventure (use same questions from Lab 2).
-TIP: Use Math.random and if-else to
-randomize elements in the game based on user input. 
-
-When the game is over,
-end the program with a "GAME OVER" message.
-
-### 2 (Done. See work/2/Documentation.txt)
-
-Get to at least 15 points in Codewars.
-
-Write a list of objects/classes you would
-use in your text adventure. 
-For example, if you were writing
-a Zombie-based adventure, your list
-of objects could be: Zombie, Weapon,
-Food, etc.
-
-Turn this in as a text file called
-Documentation and push it to your github.
-
-### 3
-
-Get to at least 25 points in Codewars.
-
-In your documentation.txt file:
-
-write a short summary of what your game is about.
-Title this section "Summary".
-In the section where you listed out objects
-for your text adventure for HW2, title this
-section "Objects Used".
-
-No other homework until I give feedback for
-your text adventure,
-in which you will refactor your code.
-
 ## Lab (labo)
 
 - 14 4-19
 - 13 4-17
-- 12 Midterm
-- 11
+- 12
+- 11 Midterm
 - 10 3-20
 - 9
 - 8
@@ -112,9 +52,41 @@ Based on the today's demo your lab requirements are:
 
 Plus 2 points if done by the end of class, otherwise, due by tonight at 11:59PM.
 
-### 12 (Midterm)
+### 12 (Done)
 
-### 11
+Directions:
+
+1. This application has bugs. Edit my code so that the program compiles and runs.
+2. Comment every line of code.
+3. Add code or modify the code so that the following output is achieved:
+
+<pre>
+	        *
+	      * * * 
+	    * * * * *
+	  * * * * * * *
+	* * * * * * * * *
+	  * * * * * * *
+	    * * * * *
+	      * * *
+	        *
+          
+  * * * * *
+	  * * * * 
+	    * * * 
+	      * * 
+	        *
+</pre>
+
+4. Fix the indentation of the code. 
+
+Note: Clean java code has:
+
+- proper indentation
+- variable declaration at the beginning of the program
+- class name starts with a capital comments that explains the logic
+
+### 11 (Midterm)
 
 You are responsible for knowing the topics listed for
 GROUP 1, 2, and 3 above including the following topics:
@@ -265,3 +237,63 @@ Use Scanner to do something.
 ### 1 (Done)
 
 Print a cool-style text.
+
+## Homework (work)
+
+- 1
+- 2
+- 3 3-22 23:59
+
+### 1 (Done)
+
+See https://github.com/agenttuy/cosci290/blob/master/HW/HW1Demo.java
+
+Create a class called "GameDriver" and
+save/name the file "GameDriver.java".
+
+The program shold start up with your
+text aventure splash screen (it would 
+be a good idea to use the one from Lab 1).
+
+Next, the program should have a print out
+of some storytelling that starts
+the text adventure.
+
+Then set up the game with questions
+asked from the user to start the text
+adventure (use same questions from Lab 2).
+TIP: Use Math.random and if-else to
+randomize elements in the game based on user input. 
+
+When the game is over,
+end the program with a "GAME OVER" message.
+
+### 2 (Done. See work/2/Documentation.txt)
+
+Get to at least 15 points in Codewars.
+
+Write a list of objects/classes you would
+use in your text adventure. 
+For example, if you were writing
+a Zombie-based adventure, your list
+of objects could be: Zombie, Weapon,
+Food, etc.
+
+Turn this in as a text file called
+Documentation and push it to your github.
+
+### 3
+
+Get to at least 25 points in Codewars.
+
+In your documentation.txt file:
+
+write a short summary of what your game is about.
+Title this section "Summary".
+In the section where you listed out objects
+for your text adventure for HW2, title this
+section "Objects Used".
+
+No other homework until I give feedback for
+your text adventure,
+in which you will refactor your code.
