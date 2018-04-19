@@ -2,7 +2,6 @@
 
 - labo
 - work
-
 - custom
 - note
 - proj
