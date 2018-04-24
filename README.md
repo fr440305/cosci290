@@ -12,6 +12,7 @@
 
 ## Lab (labo)
 
+- 15 4-24
 - 14 4-19
 - 13 4-17
 - 12
@@ -26,6 +27,18 @@
 - 3
 - 2
 - 1
+
+### 15
+
+Let's play around with multi-dimensional arrays!
+Refer to the textbook PDF chapter 8 for this.
+
+Create a test program that instantiates
+a 5 by 5 multi-dimensional array of integers.
+Randomly assign random values to each index.
+Make sure to do this with a loop and by calling
+a custom method that returns a random value.
+Then print out each value in the array using a loop.
 
 ### 14 (Done but not good. See proj/xq/Store.java)
 
