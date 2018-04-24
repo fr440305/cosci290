@@ -28,7 +28,7 @@
 - 2
 - 1
 
-### 15
+### 15 (Done. See labo/15)
 
 Let's play around with multi-dimensional arrays!
 Refer to the textbook PDF chapter 8 for this.
