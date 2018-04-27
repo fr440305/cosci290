@@ -28,12 +28,10 @@ public class Branch {
 		vals[peek+1] = val;
 		states[peek+1] = 0;
 		peek += 1;
-		//System.out.println("Branch.newIf :: ctx val state == "+ctxs[peek]+" "+vals[peek]+" "+states[peek]);
 	}
 
 	// new label
 	public static void newLb (int opt) {
-		//System.out.println("Branch.newLb vals["+peek+"] opt == " +vals[peek]+" "+opt);
 		if (ctxs[peek] && states[peek] != 2) {
 			if (states[peek] == 0) {
 				if (opt == -1 || opt == vals[peek]) {
@@ -44,18 +42,10 @@ public class Branch {
 				states[peek] = 2;
 			}
 		}
-		//System.out.println("Branch.newLb States ");
-		for (int i = 0; i <= peek; i++) {
-			//System.out.println("   states["+i+"] == " + states[i]);
-		}
 	}
 
 	public static void endIf () {
 		peek -= 1;
-		//System.out.println("Branch.endIf States ");
-		for (int i = 0; i <= peek; i++) {
-			//System.out.println("   states["+i+"] == " + states[i]);
-		}
 	}
 
 }

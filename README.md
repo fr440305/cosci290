@@ -12,6 +12,7 @@
 
 ## Lab (labo)
 
+- 16 4-30 Absent
 - 15 4-24
 - 14 4-19
 - 13 4-17
@@ -27,6 +28,21 @@
 - 3
 - 2
 - 1
+
+### 16 (Absent)
+
+Let's spend today making progress on our text adventures. Your text adventure should have the following specifications:
+
+- At least an opening and a closing splash screen
+- A strong storyline that is outlined in a text file and read using file I/O
+- User input interaction with the story
+- User input saved to a file
+- Saved user info read from a file
+- Using Math.random() for scenarios that require a probability/decision 
+- A utility/tool class that holds support methods unrelated to objects
+- (required for teams that have members in group 3 or 4):
+    - Custom classes that holds data of your objects in your text adventure 
+    - A multidimensional array that acts as a map 
 
 ### 15 (Done. See labo/15)
 

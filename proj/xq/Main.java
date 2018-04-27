@@ -5,8 +5,7 @@ import java.io.FileWriter;
 
 public class Main {
 	public static void main(String[] x) {
-		//StoryParser.exec("1");
-                Store.storeHelloWorld();
+		DataStore.storeHelloWorld();
 
 		if (x.length == 1) {
 			Story.exec(x[0]);

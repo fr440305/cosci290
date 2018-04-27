@@ -1,5 +1,3 @@
-//_//
-
 import java.util.Stack;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,7 +8,6 @@ import java.io.File;
 public class Story {
 
 	public static int getValue (String key) {
-		//System.out.println("Story.getValue");
 		if (key.equals("Input")) {
 			return new Scanner(System.in).nextInt();
 		}
@@ -82,7 +79,6 @@ public class Story {
 				re = Story.eachLine(fname, fsc);
 				fsc.close();
 			} while (re);
-		//} catch (FileNotFoundException e) {
 		} catch (Exception e) {
 			System.out.println("err!");
 			e.printStackTrace();
