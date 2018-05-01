@@ -1,4 +1,3 @@
-// 882984689
 
 import java.util.Scanner;
 import java.io.File;
@@ -7,7 +6,6 @@ import java.io.File;
 public class Story {
 
 	public static int getValue (String key) {
-		//System.out.println("Story.getValue");
 		if (key.equals("Input")) {
 			return new Scanner(System.in).nextInt();
 		}
