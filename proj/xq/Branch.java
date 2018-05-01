@@ -32,7 +32,7 @@ public class Branch {
 	}
 
 	// new label
-	public static void newLb (int opt) {
+	public static void newLb (Integer opt) {
 		if (ctxs[peek] && states[peek] != 2) {
 			if (states[peek] == 0) {
 				if (opt == null || opt.intValue() == vals[peek]) {
