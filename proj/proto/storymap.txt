@@ -11,11 +11,12 @@ buy utils {
 }
 
 sumsung {
-	1 -> x
+	1 -> throw sumsung into fire
 	2 -> google goblin weakness
 }
 
 google goblin weakness {
 	1 -> hold your sumsung and stand up
+	2 -> throw sumsung into fire
+	3 -> run away from goblins
 }
-
