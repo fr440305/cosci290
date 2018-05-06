@@ -1,0 +1,21 @@
+story.to.be.or.not.to.be.txt {
+	1 -> story.buy.utils.txt
+	2 -> story.stay.at.home.and.get.killed.txt
+}
+
+story.buy.utils.txt {
+	1 -> story.sumsung.txt
+	2 -> x
+	3 -> x
+	4 -> x
+}
+
+story.sumsung.txt {
+	1 -> x
+	2 -> story.google.goblin.weakness.txt
+}
+
+story.google.goblin.weakness.txt {
+	1 -> story.hold.your.sumsung.and.stand.up.txt
+}
+

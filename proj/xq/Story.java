@@ -39,6 +39,7 @@ public class Story {
 				continue;
 			}
 			if (Branch.isActive()) {
+
 				if (l.length() == 0) { // jump
 					System.out.println("");
 				} else if (l.startsWith("<")) { // no-indent
@@ -71,6 +72,8 @@ public class Story {
 					System.out.print("  " + l);
 					new Scanner(System.in).nextLine();
 				}
+
+
 			}
 		}
 		return false;
