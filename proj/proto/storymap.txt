@@ -1,21 +1,21 @@
-story.to.be.or.not.to.be.txt {
-	1 -> story.buy.utils.txt
-	2 -> story.stay.at.home.and.get.killed.txt
+to be or not to be {
+	1 -> buy utils
+	2 -> stay at home and get killed
 }
 
-story.buy.utils.txt {
-	1 -> story.sumsung.txt
+buy utils {
+	1 -> sumsung
 	2 -> x
 	3 -> x
 	4 -> x
 }
 
-story.sumsung.txt {
+sumsung {
 	1 -> x
-	2 -> story.google.goblin.weakness.txt
+	2 -> google goblin weakness
 }
 
-story.google.goblin.weakness.txt {
-	1 -> story.hold.your.sumsung.and.stand.up.txt
+google goblin weakness {
+	1 -> hold your sumsung and stand up
 }
 

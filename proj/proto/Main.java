@@ -56,10 +56,14 @@ public class Main {
 		return null;
 	}
 
+	public static String filePath(String title) {
+		return "story." + title.replaceAll(" ", ".") + ".txt";
+	}
+
 	public static String showStory(String fp) {
 		// fp : file path
 		try {
-			BufferedReader buf = new BufferedReader(new FileReader(fp));
+			BufferedReader buf = new BufferedReader(new FileReader(filePath(fp)));
 			String line;
 			while ((line = buf.readLine()) != null) {
 				line = line.trim();
@@ -98,7 +102,7 @@ public class Main {
 
 	public static void main(String[] x) {
 		HashMap<String, HashMap<String, String>> g = mapStories("storymap.txt");
-		String currentStory = "story.to.be.or.not.to.be.txt";
+		String currentStory = "to be or not to be";
 		while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
 			String ret = showStory(currentStory);
