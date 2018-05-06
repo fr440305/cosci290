@@ -1,19 +1,21 @@
-< 1.1 前去讨伐魔王
+< 1.1 Buy Utils.
 
-你去讨伐魔王了。
+You are to kill the man of evil.
 
-首先，你需要买一些武器，因此你需要出到村庄外面。
+.First of all, you need some weapons.
+.  Therefore you have to go outside of
+.  your village.
 
-村庄外面有个店铺，专门售卖道具给战斗的人。
+Because the market of weapons is lying here.
 
-你到了。
+You are arrived.
 
-.你身上有 20 块钱。店铺里，你能买得起的东西有：
+.You have 20 coins. Weapons that you can afford:
 .
-.    1 - 危险的炸药，19 块
-.    2 - 一张弓和五支箭，12 块
-.    3 - 最近一周的报纸，5 块
-.    4 - 地图，2 块
+.    1 - Dangerous explosive, 19 coins
+.    2 - 一张弓和五支箭，12 块 (comming soon)
+.    3 - Newspaper of the recent week, 5 coins (comming soon)
+.    4 - Map, 2 coins (comming soon)
 .
-.你选择 (1 or 234 or 23 or 24 or 34 or 2 or 3 or 4)：
-@ret
+.Please input your choice (1 or 234 or 23 or 24 or 34 or 2 or 3 or 4):
+@input

@@ -37,9 +37,10 @@ public class Main {
 					String choice = line.split("->")[0].trim();
 					String nextStory = line.split("->")[1].trim();
 					nexts.put(choice, nextStory);
-					//System.out.println(currentStoryFile + " :: " + choice + " -> " + nextStory);
+					System.out.println(currentStoryFile + " :: " + choice + " -> " + nextStory);
 				} else if (line.equals("}")) {
 					ret.put(currentStoryFile, nexts);
+					System.out.println(currentStoryFile + " :: <-");
 				} else if (line.endsWith("{")){
 					nexts = new HashMap<String, String>();
 					currentStoryFile = line.substring(0, line.length() - 2);
@@ -83,9 +84,8 @@ public class Main {
 					for (int i = 0; i < n; i++) {
 						System.out.println("");
 					}
-				} else if (line.equals("@ret")) {
-					System.out.print(">>> ");
-					return new Scanner(System.in).nextLine();
+				} else if (line.equals("@input")) {
+					return "input";
 				} else {
 					System.out.print("  " + line);
 					new Scanner(System.in).nextLine();
@@ -106,19 +106,31 @@ public class Main {
 		while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
 			String ret = showStory(currentStory);
-			if (ret == null) { // game over
-				return;
-			} else if (nexts.containsKey(ret)) {
-				currentStory = nexts.get(ret);
-				if (currentStory.equals("x")) {
-					System.out.println("Comming soon...");
-					return;
+			if (ret == null) {
+				if (g.containsKey(currentStory)) {
+					System.out.println("main :: SOON");
+				} else { // die
+					System.out.println("main :: GAME OVER");
 				}
-			} else {
-				System.out.println("Choice not found!");
-				new Scanner(System.in).nextLine();
+				return;
+			} else if (ret.equals("input")) {
+				while (true) {
+					System.out.print(">>> ");
+					ret = new Scanner(System.in).nextLine().trim();
+					if (nexts.containsKey(ret)) {
+						currentStory = nexts.get(ret);
+						if (currentStory.equals("x")) {
+							System.out.println("Comming soon...");
+							return;
+						}
+						break;
+					} else {
+						System.out.println("Choice not found!");
+					}
+				}
 			}
-		}
+		} // die
 	}
+
 }
 

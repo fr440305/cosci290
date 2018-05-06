@@ -1,9 +1,12 @@
-< Chap X - 屠杀
+< Chap X - DIE
 
-.数年过去，魔王势力越来越大。
-.现在已经没人能打败他们了。
-.他们屠杀了你所在的国家的大部分人民，其中也包括你。
+.Few years later,
+.  the power of the man of evil is
+.  getting stronger and stronger.
+.Now, nobody can beat him.
+.
+.He kills almost all people in your country.
+.  Including you, unfortunately.
 
-.你死了。
-
-============ GAME OVER ============
+.You die.
+# GAME OVER

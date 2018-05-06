@@ -20,3 +20,9 @@ google goblin weakness {
 	2 -> throw sumsung into fire
 	3 -> run away from goblins
 }
+
+throw sumsung into fire {
+}
+
+run away from goblins {
+}

@@ -1,16 +1,16 @@
-@n 100
 < Chap 0 - TO BE OR NOT TO BE
 
-你是一名勇者。你生来就被赋予了讨伐魔王的人物。
+.You are the brave.
+You are to kill the man of evil.
 
-但是一直以来，你都没有遇到魔王——直到现在，你十六岁。
+But you never heard that there is a man of evil, until now.
 
-你听说魔王出现了。
+The man of evil appears.
 
-.你有两个选择：
+.You have two choices.
 .
-.    1 讨伐魔王
-.    2 呆在家里
+.    1 Kill that man of evil
+.    2 Stay at home and do nothing
 .
-.请输入你的选择：
-@ret
+.Please input your choice, 1 or 2:
+@input
