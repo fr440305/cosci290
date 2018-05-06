@@ -29,7 +29,7 @@ public class Main {
 			String currentStoryFile = "";
 			HashMap<String, String> nexts = null;
 			while ((line = buf.readLine()) != null) {
-				if (line.contains("->")) { // choice -> next story
+				if (line.contains("->")) { // choice -> nextStory
 					if (nexts == null || currentStoryFile.length() == 0) {
 						System.out.println("[ERR] :: At line " + linenum);
 						return null;
@@ -100,16 +100,20 @@ public class Main {
 		return null;
 	}
 
-	public static void main(String[] x) {
+	public static void main(String[] args) {
 		HashMap<String, HashMap<String, String>> g = mapStories("storymap.txt");
 		String currentStory = "to be or not to be";
 		while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
 			String ret = showStory(currentStory);
-			if (ret == null) {
+			if (ret == null) { // game over
 				return;
 			} else if (nexts.containsKey(ret)) {
 				currentStory = nexts.get(ret);
+				if (currentStory.equals("x")) {
+					System.out.println("Comming soon...");
+					return;
+				}
 			} else {
 				System.out.println("Choice not found!");
 				new Scanner(System.in).nextLine();
