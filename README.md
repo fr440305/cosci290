@@ -7,6 +7,10 @@
 - proj
 - util
 
+## Text Adventure
+
+/proj/proto/x.sh
+
 ## Midterm (Done. See labo/11)
 
 
