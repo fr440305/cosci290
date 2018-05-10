@@ -1,13 +1,13 @@
-你把三星扔到了火堆里面。
+You throw your sumsung into fire.
 
-如你所料，它爆炸了。
+It explodes as you expect.
 
-哥布林都死了。哥布林们堆起的柴火，也被冲散了。
+All goblins are killed. Also, fire goes out and dark comes back.
 
-四周陷入一片黑暗。
+Normally, goblins will bring weapons. You find knives, bows, and arrows.
 
-哥布林一般都会随身带着武器。你发现了弓箭。你捡起了他们。
-
-夜色中，你接着赶起了向着魔王城的路。
+You pick them up.
 
 <===
+
+# TODO

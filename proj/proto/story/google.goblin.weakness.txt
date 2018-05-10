@@ -1,12 +1,10 @@
 <===
 
-你拿出手机，登上了谷歌。
+You take out your sumsung and google: what is the weakness of goblin?
 
-你搜索：“哥布林德弱点是什么？”
+You find a result.
 
-你发现，这个问题已经被人问过了。
-
-你点开了那个链接：
+(Press enter to see this result...)
 
 .From 4chan:
 .
@@ -16,21 +14,23 @@
 .>On forest.
 .>Saw about hundreds of Goblins.
 .>Only one sumsung be with me.
-.>Though actually i love my wife
+#.>Though actually i love my wife
+.>tell my wife i love her
 .>Those fking monsters found me out
 .>Saw my sumsung
-.>ALL OF THEM ARE RAN AWAY
+.>ALL OF THEM RAN AWAY
 .>SAFE.
 
-你发现，哥布林的弱点似乎就是你的智能手机。
+#你发现，哥布林的弱点似乎就是你的智能手机。
+It seems that the weakness of goblins is sumsung -- your phone.
 
-.你打算：
+.You are going to...
 .
-.    1 - 举着三星，站起来
-.    2 - 把手机扔进火堆
-.    3 - 趁哥布林还没有发现你，悄悄溜走
+.    1 - Hold sumsung, stand up to scare them
+.    2 - Throw sumsung into fire
+.    3 - run away quitely
 .
-.请输入你的选择：
+.Please input your choice...
 @input
 
 

@@ -1,15 +1,11 @@
 <===
 
-你举起了你的三星，然后站了起来。
+You hold your sumsung and stand up.
 
-哥布林们发现了你。
+Goblins see you and your phone.
 
-他们看见了你的智能手机。
+They take our their bows and arrows.
 
-他们并没有过来，而是纷纷拿出了弯弓，从背后抽出箭。
+You are shooted. You die.
 
-你被哥布林射了许多箭，但那不是你的死因。
-
-有一支箭射中了三星。三星爆了。你被自己的手机炸死了。
-
-# Game over.
+# DIE

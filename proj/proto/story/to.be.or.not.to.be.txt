@@ -1,11 +1,10 @@
+@n 100
 < Chap 0 - TO BE OR NOT TO BE
 
 .You are the brave.
 You are to kill the man of evil.
-
-But you never heard that there is a man of evil, until now.
-
-The man of evil appears.
+#But you never heard that there is a man of evil, until now.
+#The man of evil appears.
 
 .You have two choices.
 .

@@ -1,42 +1,58 @@
 < You choose `dangerous explosive`
 
-你选择了“危险的炸药”。
+You choose `dangerous explosive`.
 
-但是这炸药看上去一点也不危险。实际上，这看上去跟本就不像炸药。
-.这东西的外观，巴掌大，黑色，光滑，像是令牌一样。
+But it does not seem to be dangerous. Is it really explosive?
 
-于是你问店主：“这真的是炸药吗？要怎么用呢？”
+.It is as big as your hand. It is black and smooth and covered by glass.
 
-店主：“这其实是一种叫做‘智能手机’的精密仪器。而你手上拿的东西，是这仪器的残次品。这个叫‘三星智能手机’。”
+#于是你问店主：“这真的是炸药吗？要怎么用呢？”
+So you ask the storekeeper:"Is it really explosive? How do I use this?"
 
-你：“等等，我有点听不懂……‘智能手机’又是什么？”
+#店主：“这其实是一种叫做‘智能手机’的精密仪器。而你手上拿的东西，是这仪器的残次品。这个叫‘三星智能手机’。”
+Storekeeper: "Actually, this is called 'sumsung mobile phone', which is one kind of mobile phone..."
 
-店主：“是一种多功能的，靠电力驱动的精密仪器。因此，这个要配合‘充电器’使用。充电器是免费送你的……”
+#你：“等等，我有点听不懂……‘智能手机’又是什么？”
+You: "wait a minute, I've kind of mess... What is 'mobile phone'?" 
 
-.（A Few Minutes Later……）
+#店主：“是一种多功能的，靠电力驱动的精密仪器。因此，这个要配合‘充电器’使用。充电器是免费送你的……”
+Storekeeper: "A mobile phone is a multi-functional equipment that drived by electronic... (Describing...)"
 
-你：“原来如此。也就是说，一旦有了这东西，我就相当于既买了地图，又买了报纸，还买了炸药。想让他爆炸，就得把他扔进火堆里。太实惠了！谢谢你店主！”
+.(A Few Minutes Later...)
 
-店主：“不客气。”
+#你：“原来如此。也就是说，一旦有了这东西，我就相当于既买了地图，又买了报纸，还买了炸药。想让他爆炸，就得把他扔进火堆里。太实惠了！谢谢你店主！”
+.You: "I see. That is to say, if I have this, I will have map, newspaper, compass, explosive, and all I need!
+.     "That is cool! Thank you!"
+@pause
 
-你身上只剩一块钱了。
+#店主：“不客气。”
+Storekeeper: "You are welcome."
+#你身上只剩一块钱了。
 
 <=====
 
-你离开了商店，向着森林走去。因为森林是从村庄到魔王城的必经之地。
+#你离开了商店，向着森林走去。因为森林是从村庄到魔王城的必经之地。
+.You leave the store and go to the forest,
+.because you have to walk through the forest,
+to arrive the living place of the man of the evil.
 
-你打开了手机里的“指南针”应用程序，这样你就不用担心迷路了。
+#你打开了手机里的“指南针”应用程序，这样你就不用担心迷路了。
+You open the "Compass" app on your sumsung so you don't have to worry about getting lost.
 
-忽然，你听见前面传来了哥布林的笑声。
+#忽然，你听见前面传来了哥布林的笑声。
+Suddenly, you heard the laughter of Goblin coming in front of you.
 
-你遇到敌人了。大概是一群哥布林。
+#你遇到敌人了。大概是一群哥布林。
+You meet enemies. Probably a group of Goblin.
 
-你小心翼翼地潜伏在树丛里，缓缓地、悄悄地向前移动。你看到，前面有四五只哥布林坐在树丛前烤火。
+#你小心翼翼地潜伏在树丛里，缓缓地、悄悄地向前移动。你看到，前面有四五只哥布林坐在huodui前烤火。
+.You cautiously lurk in the bushes, moving slowly and quietly forward.
+You see that four or five goblins are warming themselves by a fire.
 
-.你选择：
+.You choose:
 .
-.    1 - 把手机扔进火堆
-.    2 - 偷偷上谷歌查哥布林德弱点
+.    1 - Throw sumsung into fire
+.    2 - Google goblin's weakness
 .
-.请输入你的选择：
+.Please input your selection:
 @input

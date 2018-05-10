@@ -5,9 +5,6 @@ to be or not to be {
 
 buy utils {
 	1 -> sumsung
-	2 -> x
-	3 -> x
-	4 -> x
 }
 
 sumsung {

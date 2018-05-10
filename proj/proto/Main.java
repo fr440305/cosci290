@@ -56,7 +56,7 @@ public class Main {
 	}
 
 	public static String filePath(String title) {
-	        return "story/" + title.replaceAll(" ", ".") + ".txt";
+    return "story/" + title.replaceAll(" ", ".") + ".txt";
 	}
 
 	public static String showStory(String fp) {
@@ -97,24 +97,41 @@ public class Main {
 		}
 		return null;
 	}
+  
+  public static String getProgress() {
+    try {
+      BufferedReader buf =
+        new BufferedReader(new FileReader("data/progress.txt"));
+    } catch (Exception err) {
+      return "to be or not to be";
+    }
+  }
+  
+  public static String saveProgress() {
+    return "";
+  }
 
 	public static void main(String[] args) {
 		HashMap<String, HashMap<String, String>> g = mapStories("storymap.txt");
-		String currentStory = "to be or not to be";
-		while (true) {
+		//String currentStory = "to be or not to be";
+		String currentStory = getProgress();
+    while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
 			String ret = showStory(currentStory);
 			if (ret == null) {
 				if (g.containsKey(currentStory)) {
-					System.out.println("main :: SOON");
+					System.out.println("Comming soon...");
 				} else { // die
-					System.out.println("main :: GAME OVER");
+					System.out.println("Game Over");
 				}
 				return;
 			} else if (ret.equals("input")) {
 				while (true) {
 					System.out.print(">>> ");
-					ret = new Scanner(System.in).nextLine().trim();
+					if ((ret = new Scanner(System.in).nextLine().trim()) == "") {
+            System.out.println("Exiting...");
+            return; 
+          }
 					if (nexts.containsKey(ret)) {
 						currentStory = nexts.get(ret);
 						if (currentStory.equals("x")) {
