@@ -37,10 +37,8 @@ public class Main {
 					String choice = line.split("->")[0].trim();
 					String nextStory = line.split("->")[1].trim();
 					nexts.put(choice, nextStory);
-					System.out.println(currentStoryFile + " :: " + choice + " -> " + nextStory);
 				} else if (line.equals("}")) {
 					ret.put(currentStoryFile, nexts);
-					System.out.println(currentStoryFile + " :: <-");
 				} else if (line.endsWith("{")){
 					nexts = new HashMap<String, String>();
 					currentStoryFile = line.substring(0, line.length() - 2);
@@ -58,7 +56,7 @@ public class Main {
 	}
 
 	public static String filePath(String title) {
-		return "story." + title.replaceAll(" ", ".") + ".txt";
+	        return "story/" + title.replaceAll(" ", ".") + ".txt";
 	}
 
 	public static String showStory(String fp) {
