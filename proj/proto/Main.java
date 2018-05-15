@@ -3,10 +3,14 @@
 import java.util.Scanner;
 
 import java.util.HashMap;
+import java.util.Set;
+import java.util.Map;
 import java.util.ArrayList;
 
 import java.io.FileReader;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -63,6 +67,7 @@ public class Main {
 		// fp : file path
 		try {
 			BufferedReader buf = new BufferedReader(new FileReader(filePath(fp)));
+                        saveProgress(fp);
 			String line;
 			while ((line = buf.readLine()) != null) {
 				line = line.trim();
@@ -100,25 +105,59 @@ public class Main {
   
   public static String getProgress() {
     try {
-      BufferedReader buf =
-        new BufferedReader(new FileReader("data/progress.txt"));
+      String ret = new BufferedReader(new FileReader("data/progress.txt")).readLine();
+      if (ret != null) return ret;
     } catch (Exception err) {
+      System.out.println("Cannot read the progress.");
       return "to be or not to be";
     }
+    return "to be or not to be";
   }
   
-  public static String saveProgress() {
-    return "";
+  public static String delProgress() {
+      try {
+          BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
+          bw.write("");
+          bw.close();
+          return null;
+      } catch (Exception err) {
+          err.printStackTrace();
+      }
+      return "Error";
+  }
+
+  public static String saveProgress(String story_name) {
+      try {
+          System.out.println("save progress..");
+          BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
+          bw.write(story_name);
+          bw.close();
+
+          return null;
+      } catch (Exception err) {
+          System.out.println("saveProgress Error!" + err.toString());
+      }
+      return "Error";
+  }
+
+  public static String chooseRandom(HashMap<String, String> nexts) {
+        Set<Map.Entry<String, String>> entries = nexts.entrySet();
+        ArrayList<String> choices = new ArrayList<String>();
+        for (Map.Entry<String, String> entry : entries) {
+            choices.add(entry.getKey());
+        }
+        int num = (int)(Math.random() * choices.size());
+        return choices.get(num);
   }
 
 	public static void main(String[] args) {
 		HashMap<String, HashMap<String, String>> g = mapStories("storymap.txt");
-		//String currentStory = "to be or not to be";
 		String currentStory = getProgress();
     while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
 			String ret = showStory(currentStory);
 			if (ret == null) {
+                            delProgress();
 				if (g.containsKey(currentStory)) {
 					System.out.println("Comming soon...");
 				} else { // die
@@ -128,21 +167,29 @@ public class Main {
 			} else if (ret.equals("input")) {
 				while (true) {
 					System.out.print(">>> ");
-					if ((ret = new Scanner(System.in).nextLine().trim()) == "") {
-            System.out.println("Exiting...");
-            return; 
-          }
-					if (nexts.containsKey(ret)) {
-						currentStory = nexts.get(ret);
-						if (currentStory.equals("x")) {
+					ret = new Scanner(System.in).nextLine().trim();
+					if (ret.equals("exit")) {
+                                            System.out.println("Exiting...");
+                                            return; 
+                                        } else if (ret.equals("rand")) {
+                                            String next_rand = chooseRandom(nexts);
+                                            currentStory = nexts.get(next_rand);
+                                            System.out.println("You choose " + currentStory);
+                                            break;
+                                        } else {
+
+					    if (nexts.containsKey(ret)) {
+						    currentStory = nexts.get(ret);
+						    if (currentStory.equals("x")) {
 							System.out.println("Comming soon...");
 							return;
-						}
-						break;
-					} else {
-						System.out.println("Choice not found!");
-					}
-				}
+						    }
+						    break;
+					    } else {
+						    System.out.println("Choice not found!");
+					    }
+				        }
+                                }
 			}
 		} // die
 	}
