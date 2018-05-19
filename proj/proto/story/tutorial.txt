@@ -23,4 +23,3 @@ text adventure, making selections!
 .  2 - Select "Two"
 .
 .You can input either 1 or 2 to the next line:
-@input

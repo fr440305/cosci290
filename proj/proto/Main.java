@@ -44,17 +44,21 @@ public class Main {
 			while ((line = buf.readLine()) != null) {
 				if (line.endsWith("{")){
 					nexts = new HashMap<String, String>();
-					currentStory = line.substring(0, line.length() - 1).trim();
+					currentStory = line.substring(0, line.length() - 2);
 				} else if (line.contains("->")) { // choice -> nextStory
 					if (nexts == null || currentStory.length() == 0) {
-						System.out.println("[ERR] :: At line " + linenum);
+						System.out.println("[ERR] :: At storymap.txt line " + linenum);
 						return null;
 					}
 					String choice = line.split("->")[0].trim();
 					String nextStory = line.split("->")[1].trim();
 					nexts.put(choice, nextStory);
 				} else if (line.equals("}")) {
-				
+					if (nexts == null || currentStory.length() == 0) {
+						System.out.println("[ERR] :: At storymap.txt line " + linenum);
+						return null;
+					}
+					ret.put(currentStory, nexts);
 				}
 				linenum += 1;
 			}
@@ -123,7 +127,7 @@ public class Main {
 		return "tutorial";
 	}
   
-	// Delete progress.
+	// Delete progress. Return error.
 	public static String delProgress() {
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
@@ -133,9 +137,10 @@ public class Main {
 		} catch (Exception err) {
 			err.printStackTrace();
 		}
-		return "Error";
+		return "error";
 	}
 
+	// Return error.
 	public static String saveProgress(String storyName) {
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
@@ -179,7 +184,7 @@ public class Main {
 		// "Game Loop": 
 		while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
-			String afterStory = showStory(currentStory);
+			String err = showStory(currentStory);
 			if (nexts == null) { // no nexts => die
 				System.out.println("Game Over");
 				delProgress();
