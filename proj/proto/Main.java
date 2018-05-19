@@ -105,7 +105,7 @@ public class Main {
 		String currentStory = "to be or not to be";
 		while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
-			String ret = showStory(currentStory);
+			String ret = showStory(currentStory); // select from...
 			if (ret == null) {
 				if (g.containsKey(currentStory)) {
 					System.out.println("main :: SOON");
@@ -116,19 +116,15 @@ public class Main {
 			} else if (ret.equals("input")) {
 				while (true) {
 					System.out.print(">>> ");
-					ret = new Scanner(System.in).nextLine().trim();
+					ret = new Scanner(System.in).nextLine().trim(); // make selection
 					if (nexts.containsKey(ret)) {
 						currentStory = nexts.get(ret);
-						if (currentStory.equals("x")) {
-							System.out.println("Comming soon...");
-							return;
-						}
 						break;
 					} else {
 						System.out.println("Choice not found!");
 					}
 				}
-			}
+			} else {}
 		} // die
 	}
 
