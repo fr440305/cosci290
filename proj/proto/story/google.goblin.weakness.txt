@@ -1,0 +1,36 @@
+<===
+
+You take out your sumsung and google: what is the weakness of goblin?
+
+You find a result.
+
+(Press enter to see this result...)
+
+.From 4chan:
+.
+. Channel : /f/
+.
+.>Be me.
+.>On forest.
+.>Saw about hundreds of Goblins.
+.>Only one sumsung be with me.
+#.>Though actually i love my wife
+.>tell my wife i love her
+.>Those fking monsters found me out
+.>Saw my sumsung
+.>ALL OF THEM RAN AWAY
+.>SAFE.
+
+#你发现，哥布林的弱点似乎就是你的智能手机。
+It seems that the weakness of goblins is sumsung -- your phone.
+
+.You are going to...
+.
+.    1 - Hold sumsung, stand up to scare them
+.    2 - Throw sumsung into fire
+.    3 - run away quitely
+.
+.Please input your choice...
+@input
+
+

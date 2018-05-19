@@ -1,22 +1,24 @@
 // weishu tan
 // 2018-5-5
+
+// stdio:
 import java.util.Scanner;
 
+// storymap:
 import java.util.HashMap;
+import java.util.Set;
+import java.util.Map;
 import java.util.ArrayList;
 
-import java.io.FileReader;
+// fileio:
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class Main {
-
-	// output
-	public static String o(String p) {
-		System.out.println(p);
-		return new Scanner(System.in).nextLine();
-	}
 
 	public static HashMap<String, HashMap<String, String>> mapStories(String smp) {
 		// smp : story map path
@@ -37,10 +39,8 @@ public class Main {
 					String choice = line.split("->")[0].trim();
 					String nextStory = line.split("->")[1].trim();
 					nexts.put(choice, nextStory);
-					System.out.println(currentStoryFile + " :: " + choice + " -> " + nextStory);
 				} else if (line.equals("}")) {
 					ret.put(currentStoryFile, nexts);
-					System.out.println(currentStoryFile + " :: <-");
 				} else if (line.endsWith("{")){
 					nexts = new HashMap<String, String>();
 					currentStoryFile = line.substring(0, line.length() - 2);
@@ -58,13 +58,14 @@ public class Main {
 	}
 
 	public static String filePath(String title) {
-		return "story." + title.replaceAll(" ", ".") + ".txt";
+    return "story/" + title.replaceAll(" ", ".") + ".txt";
 	}
 
 	public static String showStory(String fp) {
 		// fp : file path
 		try {
 			BufferedReader buf = new BufferedReader(new FileReader(filePath(fp)));
+      saveProgress(fp);
 			String line;
 			while ((line = buf.readLine()) != null) {
 				line = line.trim();
@@ -99,33 +100,112 @@ public class Main {
 		}
 		return null;
 	}
+  
+  public static String getProgress(HashMap<String, HashMap<String, String>> g) {
+    try {
+      String ret = new BufferedReader(new FileReader("data/progress.txt")).readLine();
+      if (ret != null && g.containsKey(ret)) {
+        return ret; 
+      } else {
+        System.out.println("Cannot read the progress.");
+      }
+    } catch (Exception err) {
+      System.out.println("Cannot read the progress.");
+    }
+    //error or first time:
+    return "tutorial";
+  }
+  
+  public static String delProgress() {
+      try {
+          BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
+          bw.write("");
+          bw.close();
+          return null;
+      } catch (Exception err) {
+          err.printStackTrace();
+      }
+      return "Error";
+  }
+
+  public static String saveProgress(String story_name) {
+      try {
+          //System.out.println("save progress..");
+          BufferedWriter bw = new BufferedWriter(new FileWriter("data/progress.txt"));
+          bw.write(story_name);
+          bw.close();
+
+          return null;
+      } catch (Exception err) {
+          System.out.println("saveProgress Error!" + err.toString());
+      }
+      return "Error";
+  }
+
+  public static String chooseRandom(HashMap<String, String> nexts) {
+        Set<Map.Entry<String, String>> entries = nexts.entrySet();
+        ArrayList<String> choices = new ArrayList<String>();
+        for (Map.Entry<String, String> entry : entries) {
+            choices.add(entry.getKey());
+        }
+        int num = (int)(Math.random() * choices.size());
+        return choices.get(num);
+  }
+
+    public static void gameLoop(HashMap<String, HashMap<String, String>> storyMap, String currentStory) {
+    }
 
 	public static void main(String[] args) {
 		HashMap<String, HashMap<String, String>> g = mapStories("storymap.txt");
-		String currentStory = "to be or not to be";
-		while (true) {
+		String currentStory = getProgress(g);
+        // "Game Loop": 
+        while (true) {
 			HashMap<String, String> nexts = g.get(currentStory);
-			String ret = showStory(currentStory); // select from...
-			if (ret == null) {
+			String afterStory = showStory(currentStory);
+			if (afterStory == null) {
+                
 				if (g.containsKey(currentStory)) {
-					System.out.println("main :: SOON");
+                    if (g.get(currentStory).containsKey("")) {
+                        currentStory = g.get(currentStory).get("");
+                    } else {
+					    System.out.println("Comming soon...");
+                      delProgress();
+                      return;
+                    }
 				} else { // die
-					System.out.println("main :: GAME OVER");
+					System.out.println("Game Over");
+          delProgress();
+				    return;
 				}
-				return;
-			} else if (ret.equals("input")) {
+			} else if (afterStory.equals("input")) {
+                // which story after this depends on the user input
+                // receive user input:
 				while (true) {
 					System.out.print(">>> ");
-					ret = new Scanner(System.in).nextLine().trim(); // make selection
-					if (nexts.containsKey(ret)) {
-						currentStory = nexts.get(ret);
-						break;
-					} else {
-						System.out.println("Choice not found!");
-					}
-				}
-			} else {}
-		} // die
+					String userInput = new Scanner(System.in).nextLine().trim();
+					if (userInput.equals("exit")) {
+                        System.out.println("Exiting...");
+                        return; 
+                    } else if (userInput.equals("rand")) {
+                        String next_rand = chooseRandom(nexts);
+                        currentStory = nexts.get(next_rand);
+                        //System.out.println("You choose " + currentStory);
+                        break;
+                    } else {
+					    if (nexts.containsKey(userInput)) {
+						    currentStory = nexts.get(userInput);
+						    if (currentStory.equals("x")) {
+							System.out.println("Comming soon...");
+							return;
+						    }
+						    break;
+					    } else {
+						    System.out.println("Choice not found!");
+					    }
+                    }
+                }
+			}
+		} // end of the game loop
 	}
 
 }

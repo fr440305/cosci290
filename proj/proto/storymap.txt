@@ -1,3 +1,33 @@
+tutorial {
+    1 -> tutorial one
+    2 -> tutorial two
+}
+
+tutorial one {
+  -> tutorial three
+}
+
+tutorial two {
+  -> tutorial three
+}
+
+tutorial three {
+  1 -> tutorial three one
+  2 -> tutorial three two
+}
+
+tutorial three one {
+  -> tutorial final
+}
+
+tutorial three two {
+  -> tutorial final
+}
+
+tutorial final {
+  -> to be or not to be
+}
+
 to be or not to be {
 	1 -> buy utils
 	2 -> stay at home and get killed
@@ -5,9 +35,6 @@ to be or not to be {
 
 buy utils {
 	1 -> sumsung
-	2 -> x
-	3 -> x
-	4 -> x
 }
 
 sumsung {

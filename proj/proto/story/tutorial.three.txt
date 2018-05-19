@@ -1,0 +1,19 @@
+.
+.And we have not done yet. Sometimes, making selection is difficult.
+.Therefore, you are allowed to make selection randomly by typing "rand"
+after ">>>".
+
+.And if you are tired, you want to play it next time, 
+.you can input "exit" after ">>>".
+.Then the game will exit
+and the prograss will be stored automatically.
+
+For example, If you have:
+
+. This horrible selection:
+.
+.  1 - kill Tim, a good person, to save five people
+.  2 - kill Bob, also a good person, to save five people
+.
+.Please try to input rand (all lower case) or exit (which means that you are tired):
+@input

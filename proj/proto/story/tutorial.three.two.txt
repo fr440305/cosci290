@@ -1,0 +1,3 @@
+
+.The computer choose two for you.
+.And don't worry, Bob is still alive because it is just an example.

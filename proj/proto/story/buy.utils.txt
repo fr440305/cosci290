@@ -6,16 +6,16 @@ You are to kill the man of evil.
 .  Therefore you have to go outside of
 .  your village.
 
-Because the market of weapons is lying here.
+Because the store of weapons is lying here.
 
 You are arrived.
 
 .You have 20 coins. Weapons that you can afford:
 .
 .    1 - Dangerous explosive, 19 coins
-.    2 - 一张弓和五支箭，12 块 (comming soon)
+.    2 - A Bow and Five Arrows (comming soon)
 .    3 - Newspaper of the recent week, 5 coins (comming soon)
 .    4 - Map, 2 coins (comming soon)
 .
-.Please input your choice (1 or 234 or 23 or 24 or 34 or 2 or 3 or 4):
+.Please input your choice (1 only):
 @input

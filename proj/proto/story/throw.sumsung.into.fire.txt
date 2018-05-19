@@ -1,0 +1,13 @@
+You throw your sumsung into fire.
+
+It explodes as you expect.
+
+All goblins are killed. Also, fire goes out and dark comes back.
+
+Normally, goblins will bring weapons. You find knives, bows, and arrows.
+
+You pick them up.
+
+<===
+
+# TODO
