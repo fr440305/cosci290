@@ -4,48 +4,48 @@ tutorial {
 }
 
 tutorial one {
-  -> tutorial three
+    -> tutorial three
 }
 
 tutorial two {
-  -> tutorial three
+    -> tutorial three
 }
 
 tutorial three {
-  1 -> tutorial three one
-  2 -> tutorial three two
+    1 -> tutorial three one
+    2 -> tutorial three two
 }
 
 tutorial three one {
-  -> tutorial final
+    -> tutorial final
 }
 
 tutorial three two {
-  -> tutorial final
+    -> tutorial final
 }
 
 tutorial final {
-  -> to be or not to be
+    -> to be or not to be
 }
 
 to be or not to be {
-	1 -> buy utils
-	2 -> stay at home and get killed
+    1 -> buy utils
+    2 -> stay at home and get killed
 }
 
 buy utils {
-	1 -> sumsung
+    1 -> sumsung
 }
 
 sumsung {
-	1 -> throw sumsung into fire
-	2 -> google goblin weakness
+    1 -> throw sumsung into fire
+    2 -> google goblin weakness
 }
 
 google goblin weakness {
-	1 -> hold your sumsung and stand up
-	2 -> throw sumsung into fire
-	3 -> run away from goblins
+    1 -> hold your sumsung and stand up
+    2 -> throw sumsung into fire
+    3 -> run away from goblins
 }
 
 throw sumsung into fire {
