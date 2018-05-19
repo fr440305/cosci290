@@ -18,4 +18,3 @@ You are arrived.
 .    4 - Map, 2 coins (comming soon)
 .
 .Please input your choice (1 only):
-@input

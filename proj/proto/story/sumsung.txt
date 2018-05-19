@@ -55,4 +55,3 @@ You see that four or five goblins are warming themselves by a fire.
 .    2 - Google goblin's weakness
 .
 .Please input your selection:
-@input

@@ -16,4 +16,3 @@ For example, If you have:
 .  2 - kill Bob, also a good person, to save five people
 .
 .Please try to input rand (all lower case) or exit (which means that you are tired):
-@input
