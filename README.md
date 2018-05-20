@@ -16,6 +16,8 @@
 
 ## Lab (labo)
 
+- x1 0-00 Iterate a matrix by recursion.
+- 17, 18, 19, 20 Text adventure
 - 16 4-30 Absent
 - 15 4-24
 - 14 4-19
