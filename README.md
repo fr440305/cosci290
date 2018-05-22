@@ -16,6 +16,7 @@
 
 ## Lab (labo)
 
+- 22
 - 16 4-30 Absent
 - 15 4-24
 - 14 4-19
@@ -32,6 +33,37 @@
 - 3
 - 2
 - 1
+### 22
+
+1. Create an abstract class called Undead that has the following instance variables:
+    - health
+    - experience
+    - name
+
+Be sure to include appropriate constructors and
+other functions (getters/setters/toString) for the Undead class. 
+
+The Undead class has an abstract method called attack
+that simply prints out how the object attacks.
+
+2. Create a subclass of Undead called UndeadMage that has the following instance variables:
+    - spellOne
+    - spellTwo
+    
+Be sure to include appropriate constructors and other functions (getters/setters/toString) for UneadMage class. 
+
+3. Create a subclass Undead called UndeadWarrior that has the following instance variables:
+    - rightHandWeapon
+    - leftHandWeapon
+
+Be sure to include appropriate constructors and other functions (getters/setters/toString) for UneadMage class. 
+
+4. Create a runner/driver/tester class that randomly generates
+either an UndeadMage object or an UndeadWarrior object
+and then adds the new object to an array list of Undead.
+Then loop through the array list of Undead and call the attack method for each object.
+
+Work on text adventure!
 
 ### 16 (Absent)
 
