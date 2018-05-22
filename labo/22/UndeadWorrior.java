@@ -13,34 +13,30 @@ public class UndeadWorrior extends Undead {
     super(health, experience, name);
   }
   
-  public int getHealth() {
-    return super.getHealth();
+  public String getLeftHandWeapon() {
+    return this.leftHandWeapon;
   }
   
-  public int getExperience() {
-    return super.getExperience();
+  public String getRightHandWeapon() {
+    return this.rightHandWeapon;
   }
   
-  public String getName() {
-    return super.getName();
+  public void setLeftHandWeapon(String l) {
+    this.leftHandWeapon = l;
   }
   
-  public void setHealth(int health) {
-    super.setHealth(health);
-  }
-  
-  public void setExperience(int ex) {
-    super.setExperience(ex);
-  }
-  
-  public void setName(String name) {
-    super.setName(name);
+  public void setRightHandWeapon(String r) {
+    this.rightHandWeapon = r;
   }
   
   public String toString() {
-    return "UndeadWorrior{health: "+this.getHealth()+
+    return "UndeadWorrior{"+
+      "health: "+this.getHealth()+
       ", experience: "+this.getExperience()+
-      ", name: "+this.getName()+"}";
+      ", name: "+this.getName()+
+      ", leftHandWeapon: "+this.getLeftHandWeapon()+
+      ", rightHandWeapon: "+this.getRightHandWeapon()+
+      "}";
   }
   
   /* @override */

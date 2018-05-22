@@ -13,35 +13,31 @@ public class UndeadMage extends Undead {
     super(health, experience, name);
   }
   
-  public int getHealth() {
-    return super.getHealth();
+  public String getSpellOne() {
+    return this.spellOne;
   }
   
-  public int getExperience() {
-    return super.getExperience();
+  public String getSpellTwo() {
+    return this.spellTwo;
   }
   
-  public String getName() {
-    return super.getName();
+  public void setSpellOne(String sp1) {
+    this.spellOne = sp1;
   }
   
-  public void setHealth(int health) {
-    super.setHealth(health);
-  }
-  
-  public void setExperience(int ex) {
-    super.setExperience(ex);
-  }
-  
-  public void setName(String name) {
-    super.setName(name);
+  public void setSpellTwo(String sp2) {
+    this.spellTwo = sp2;
   }
   
   /* @override */
   public String toString() {
-    return "UndeadMage{health: "+this.getHealth()+
+    return "UndeadMage{"+
+      "health: "+this.getHealth()+
       ", experience: "+this.getExperience()+
-      ", name: "+this.getName()+"}";
+      ", name: "+this.getName()+
+      ", spellOne: "+this.getSpellOne()+
+      ", spellTwo: "+this.getSpellTwo()+
+      "}";
   }
   
   /* @override */
