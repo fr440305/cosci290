@@ -18,7 +18,7 @@ public class Main {
   }
   
   public static void main(String[] args) {
-    for (Undead u : generateUndeads(100)) {
+    for (Undead u : generateUndeads(5)) {
       u.attack();
     }
   }
