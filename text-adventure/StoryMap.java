@@ -15,7 +15,10 @@ public class StoryMap extends HashMap<String, HashMap<String, String>> {
 		HashMap<String, String> nexts = null;
 
 		ArrayList<String> file = Util.readFile(path);
-		if (file == null) return;
+		if (file == null) {
+			System.out.println("Error: cannot open story/_map.txt");
+			return
+		}
 
 		for (String line : file) {
 			if (line.endsWith("{")){

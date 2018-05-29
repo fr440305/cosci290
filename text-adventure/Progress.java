@@ -22,7 +22,19 @@ public class Progress {
 	}
 
 	public static void save(String storyTitle) {
-		Util.writeFile("data/progress.txt", storyTitle);
+		String err = Util.writeFile("data/progress.txt", storyTitle);
+		if (err != null) {
+			System.out.println(
+				"Warning: The story progress "+
+				"cannot be saved for unknown reason."
+			);
+		} else {
+			System.out.println(
+				"Story progress has already been saved."+
+				"Next time the game will start from `"+
+				storyTitle+"`."
+			);
+		}
 	}
 }
 
