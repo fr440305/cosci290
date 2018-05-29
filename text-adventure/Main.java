@@ -179,7 +179,7 @@ public class Main {
 				currentStory = nexts.get("");
 			} else { // branch => get user choice
 				if ((currentStory = getChoiceByInput(nexts)) == null) {
-					System.out.println("Exiting...");
+					System.out.println("Bye bye.");
 					return;
 				}
 			}

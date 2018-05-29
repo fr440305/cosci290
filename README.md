@@ -9,12 +9,15 @@
 
 ## Text Adventure
 
-/proj/proto/x.sh
+See text-adventure directory.
 
-## Midterm (Done. See labo/11)
+* * *
 
+## Midterm
 
-## Lab (labo)
+Done. See labo/11.
+
+## Labs (labo)
 
 - 22
 - x1 0-00 Iterate a matrix by recursion.
@@ -304,7 +307,7 @@ Use Scanner to do something.
 
 Print a cool-style text.
 
-## Homework (work)
+## Homeworks (work)
 
 - 1
 - 2
