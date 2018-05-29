@@ -9,9 +9,13 @@ import java.util.HashMap;
 
 public class StoryTeller {
 
+	private static String getPathOf(String title) {
+		return "story/" + title.replaceAll(" ", ".") + ".txt";
+	}
+
 	public static String tell(String title) {
 		Progress.save(title);
-		ArrayList<String> file = Util.readFile(Util.getPathOf(title));
+		ArrayList<String> file = Util.readFile(getPathOf(title));
 		if (file == null) return "error";
 		for (String line : file) {
 			line = line.trim();
@@ -50,10 +54,10 @@ public class StoryTeller {
 	public static String getChoiceByInput(HashMap<String, String> nexts) {
 		while (true) {
 			System.out.print("\n>>> ");
-			String input = new Scanner(System.in).nextLine().trim();
-			if (input.equals("exit")) {
+			String input = new Scanner(System.in).nextLine().trim().toLowerCase();
+			if (input.equals("exit") || input.equals("q")) {
 				return null;
-			} else if (input.equals("rand")) {
+			} else if (input.equals("rand") || input.equals("r")) {
 				return nexts.get(chooseRandom(nexts));
 			} else if (nexts.containsKey(input)){
 				return nexts.get(input);

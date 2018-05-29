@@ -4,6 +4,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
+// This class is the interpreter for story/_map.txt
 public class StoryMap extends HashMap<String, HashMap<String, String>> {
 
 	public StoryMap(String path) {

@@ -12,9 +12,6 @@ import java.io.IOException;
 
 public class Util {
 
-	public static String getPathOf(String title) {
-		return "story/" + title.replaceAll(" ", ".") + ".txt";
-	}
 
 	public static ArrayList<String> readFile(String filepath) {
 		ArrayList<String> lines = new ArrayList< >();
