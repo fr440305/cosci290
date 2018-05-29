@@ -1,3 +1,8 @@
+# Text Adventure
+
+See text-adventure directory.
+
+* * *
 # Cosci290 Group 4
 
 - labo
@@ -6,12 +11,6 @@
 - note
 - proj
 - util
-
-## Text Adventure
-
-See text-adventure directory.
-
-* * *
 
 ## Midterm
 
