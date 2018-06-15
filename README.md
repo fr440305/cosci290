@@ -5,18 +5,18 @@ See text-adventure directory.
 * * *
 # Cosci290 Group 4
 
-- labo
-- work
+- lab
+- hwk
 - custom
-- note
-- proj
-- util
+- lec 
+- prj
+- utl
 
 ## Midterm
 
-Done. See labo/11.
+Done. See lab/11.
 
-## Labs (labo)
+## Labs (lab)
 
 - 22
 - x1 0-00 Iterate a matrix by recursion.
@@ -84,7 +84,7 @@ Let's spend today making progress on our text adventures. Your text adventure sh
     - Custom classes that holds data of your objects in your text adventure 
     - A multidimensional array that acts as a map 
 
-### 15 (Done. See labo/15)
+### 15 (Done. See lab/15)
 
 Let's play around with multi-dimensional arrays!
 Refer to the textbook PDF chapter 8 for this.
@@ -96,7 +96,7 @@ Make sure to do this with a loop and by calling
 a custom method that returns a random value.
 Then print out each value in the array using a loop.
 
-### 14 (Done but not good. See proj/xq/Store.java)
+### 14 (Done but not good. See prj/xq/Store.java)
 
 Using the same techniques on Tuesday's lab,
 compile and run "TestWriteFile.java",
@@ -109,7 +109,7 @@ Be sure to modify the code so that it is a reusable custom method.
 Use this method in your `GameDriver.java` to write/save info asked by the user.
 Think of information that you might want to save for the user of your text adventure.
 
-### 13 (Done before the class begin. See /proj/xq)
+### 13 (Done before the class begin. See /prj/xq)
 
 Based on the today's demo your lab requirements are:
 
@@ -187,7 +187,7 @@ Create a test program/class that has a list of 5 Student
 objects and prints out each student information
 including their name, age, and gender.
 
-### 10 (Done. See proj/\* for 1 and labo/10/\* for 2 and 3.)
+### 10 (Done. See prj/\* for 1 and lab/10/\* for 2 and 3.)
 
 1. In your text adventure,
 replace all arrays with ArrayLists.
@@ -214,7 +214,7 @@ Alter the above problem to take in arguments from
 the command line instead and use ArrayLists
 instead of arrays.
 
-### 9 (Done. See proj/{Obj*, Zombie*, Main})
+### 9 (Done. See prj/{Obj*, Zombie*, Main})
 
 Create a superclass that all of your objects in your
 text adventure will extend to and name it accordingly
@@ -231,9 +231,9 @@ Set some properties for each class.
 Then loop through the ArrayList and print out
 info on each object.
 
-### 8 (Done. See work/2/Documentation.txt or proj/README)
+### 8 (Done. See hwk/2/Documentation.txt or prj/README)
 
-Relates to note/mar13.
+Relates to lec/mar13.
 
 Using UML graphical notation,
 draw a chart that organizes your current
@@ -284,7 +284,7 @@ Look at Student.java and TestStudent.java in:
 
 ### 5
 
-Set the text adventure into an eclipse project.
+Set the text adventure into an eclipse prject.
 
 Install git plugin into eclipse.
 
@@ -306,7 +306,7 @@ Use Scanner to do something.
 
 Print a cool-style text.
 
-## Homeworks (work)
+## Homehwks (hwk)
 
 - 1
 - 2
@@ -336,7 +336,7 @@ randomize elements in the game based on user input.
 When the game is over,
 end the program with a "GAME OVER" message.
 
-### 2 (Done. See work/2/Documentation.txt)
+### 2 (Done. See hwk/2/Documentation.txt)
 
 Get to at least 15 points in Codewars.
 
@@ -362,6 +362,6 @@ In the section where you listed out objects
 for your text adventure for HW2, title this
 section "Objects Used".
 
-No other homework until I give feedback for
+No other homehwk until I give feedback for
 your text adventure,
 in which you will refactor your code.
